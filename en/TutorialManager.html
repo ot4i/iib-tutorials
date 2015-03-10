@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+
+<html class="no-js" lang="en">
+ 
+	
+<!-- header::Start -->
+	<head>
+		<!-- Use Internet Explorer 9 Standards mode for Eclipse Browser Control - https://www.eclipse.org/swt/faq.php#browsernativeie and https://msdn.microsoft.com/en-us/library/jj676915%28v=vs.85%29.aspx -->
+  		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		
+		<meta http-equiv="Pragma" content="no-cache">
+  		<meta http-equiv="Expires" content="-1">
+  		
+
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="abstract" content="IBM Integration Bus V10 Tutorial">
+		<meta name="author" content="IBM">
+		<meta name="description" content="IBM Integration Bus V10 Tutorial">
+		<meta name="keywords" content="keywords" > 
+		<meta name="robots" content="index,follow">
+		<meta name="source" content="IBM Integration Bus V10 Tutorial" /> 
+		ok
+		
+		<title>IBM Integration Bus V10 Tutorial</title>
+
+    	<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/main.css" />
+    	
+    	<script src="http://ot4i.github.io/iib-tutorials/js/iibv10/json2.js"></script>
+    	<script src="http://ot4i.github.io/iib-tutorials/js/iibv10/js2java.js"></script>
+  		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/modernizr.js"></script>
+	</head>
+<!-- header::End -->
+<!-- body::Start -->
+		<body onload="fillList()">
+  <!-- body content here -->
+  <div class="manager-container">
+  <div class="row">
+    <div class="large-offset-2 medium-offset-2 small-offset-2">
+		<div class="row">
+			  <h3><img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/booklet-guide_128.png"> Show Me</h3>
+		</div>
+	</div>
+  </div> 
+
+  <div class="row">
+      <div class="large-12 columns">
+        <div class="row"> 
+           <div class="large-offset-2 large-10 medium-offset-2 medium-10 small-offset-2 small-10 columns">
+            <div class="row">
+              <div class="columns">
+                <h5 class="subheader">Here you can explore and learn about IBM Integration Bus using tutorials. <br> What are you interested in? 
+                </h5>
+              </div>
+            </div>
+  <hr>
+            <div class="row"> 
+              <div class="large-10 medium-10 small-10 columns">
+
+                <ul class="tabs"> 
+                  <li class="tab-title tab-title-big active"> <!-- onclick="resetSelection('styledSelect_Tool_Capabilities');"-->
+                    <a href="javascript:;" onclick="show('panel11')">Tool Capabilities</a>
+                  </li>
+                  <li class="tab-title tab-title-big">
+                    <a href="javascript:;" onclick="show('panel21')">Scenarios</a> <!--onclick="resetSelection('styledSelect_Scenarios');"-->
+                  </li>
+                </ul>
+                <div class="tabs-content">
+                  <div class="content active" id="panel11">
+                    <div class="row">
+                    <h5 class="subheader text-center tabdescription">Explore Integration Bus concepts by following simple tutorials</h5>
+                    <div>
+                      <select size="10" id="styledSelect_Tool_Capabilities" name="tutorials" onchange="resetSelection('styledSelect_Scenarios');changeFunc('styledSelect_Tool_Capabilities')">
+                      </select>
+                    </div>
+                    <p id="tutorialDesc_styledSelect_Tool_Capabilities">
+                      Please select a tutorial...
+                    </p>
+
+                    <div class="row">
+                      <div class="small-offset-3 small-3 medium-offset-3 medium-3 large-offset-3 large-3 columns text-center">
+                        <action>
+                          <div class="small radius button" id="viewDetails" onclick="viewDetails('styledSelect_Tool_Capabilities')"> View Details
+                          </div>
+                        </action>
+                      </div>
+                      <div class="small-3 medium-3 large-3 columns left text-center">
+                        <action>
+                          <div class="small radius button" id="startTutorial" onclick="startTutorial('styledSelect_Tool_Capabilities')"> Start Tutorial
+                          </div>
+                        </action>
+                      </div>
+                    </div>
+                    <hr>
+                    </div>
+                  </div>
+                  <div class="content" id="panel21">
+						<h5 class="subheader text-center tabdescription">Explore powerful Integration Bus capabilities through integrated scenarios</h5>
+                  <div>
+                    <select size="10" id="styledSelect_Scenarios" name="tutorials" onchange="resetSelection('styledSelect_Tool_Capabilities');changeFunc('styledSelect_Scenarios')">
+                    </select>
+                  </div>
+                  
+                  <p id="tutorialDesc_styledSelect_Scenarios">
+                    Please select a tutorial...
+                  </p>
+
+                  <div class="row"> 
+                    <div class="small-offset-3 small-3 medium-offset-3 medium-3 large-offset-3 large-3 columns text-center">
+                      <action>
+                        <div class="small radius button" id="viewDetails" onclick="viewDetails('styledSelect_Scenarios')"> View Details
+                        </div>
+                      </action>
+                    </div>
+                    <div class="small-3 medium-3 large-3 columns left text-center">
+                      <action>
+                        <div class="small radius button" id="startTutorial" onclick="startTutorial('styledSelect_Scenarios')"> Start Tutorial
+                        </div>
+                      </action>
+                    </div>
+                  </div>
+                  <hr>
+                  </div>
+                </div><!-- Tab content -->
+              </div>
+            </div>
+
+        </div><!-- columns-11 --> 
+      </div><!-- row -->
+    </div><!-- columns-12 -->
+  </div><!-- row -->
+ </div></body>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/jquery.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/foundation.min.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/main.js"></script>
+	</body>
+<!-- body::End -->
+
+</html>

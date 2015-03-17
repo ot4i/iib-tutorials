@@ -107,48 +107,7 @@
 			"visible": "true",
 			"tutorials":
 			[
-				{
-					"name" : "GDM Mapper with VCard data (TO UPDATE BY GA)",
-					"version"	: "1.0",
-					"iibVersions"	: "10.*-11.*",
-					"shortDesc" : "GDM Mapper with VCard data (TO UPDATE BY GA)",
-					"detailsURL" : "http://ot4i.github.io/DFDL-JSON-GDM-tutorial/index.html",
-					"stepsURL" : "http://ot4i.github.io/DFDL-JSON-GDM-tutorial/index.html",
-					"zipURL" : "https://github.com/ot4i/ot4i.tutorials/releases/download/V1/Tutorial1PI.zip",
-					"barFile" : "<workspace>/BARfiles/TutorialONE.bar",
-					"visible"	: "true",
-					"tags"	: "mq;scenarios",
-					"isPattern"	: "false",
-					"isFavorite": "true",
-					"isDefault" : "false",
-					"projects"	: "Tutorial1App:BARfiles",
-					"editorResPaths" : 
-					[
-						{
-						"id" : "MainFlow",
-						"editor" : "flow",
-						"wspath" : "<workspace>/Tutorial1App/bschema1/Tutorial1Flow.msgflow"
-						},
-						{
-						"id" : "MainSchema",
-						"editor" : "dfdl",
-						"wspath" : "<workspace>/Tutorial1App/taderc99.xsd"
-						},
-						{
-						"id" : "MainScript",
-						"editor" : "text",
-						"wspath" : "<workspace>/Tutorial1App/iib_queues_create.mqsc"
-						}
-					],
-					"deployedResources" : 
-					[
-						{
-						"type" : "application",
-						"path" : "Tutorial1App"
-						}
-					]
-				}
-				
+								
 			]
 		}
 	]

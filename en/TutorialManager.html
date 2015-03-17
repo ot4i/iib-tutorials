@@ -24,11 +24,12 @@
 		
 		<title>IBM Integration Bus V10 Tutorial</title>
 
-    	<link rel="stylesheet" href="../css/main.css" />
+    	<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/main.css" />
+		<link rel="stylesheet" href="http://ot4i.github.io/iib-tutorials/css/app.css" />
     	
-    	<script src="../js/iibv10/json2.js"></script>
-    	<script src="../js/iibv10/js2java.js"></script>
-  		<script src="../js/vendor/modernizr.js"></script>
+    	<script src="http://ot4i.github.io/iib-tutorials/js/json2.js"></script>
+    	<script src="http://ot4i.github.io/iib-tutorials/js/js2java.js"></script>
+  		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/modernizr.js"></script>
 	</head>
 <!-- header::End -->
 <!-- body::Start -->
@@ -38,7 +39,7 @@
   <div class="row">
     <div class="large-offset-2 large-8 medium-offset-2 medium-8 small-offset-2 small-8 columns">
 		<div class="row">
-			  <h3><img class="icon-image" src="../images/icons/ibmdesign/booklet-guide_128.png"> Show Me</h3>
+			  <h3><img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/booklet-guide_128.png"> Show Me</h3>
 		</div>
 	</div>
   </div> 
@@ -56,11 +57,8 @@
               <div class="columns">
 
                 <ul class="tabs" id="tutorialCategories"> 
-                  <li class="tab-title tab-title-big active"> <!-- onclick="resetSelection('styledSelect_Tool_Capabilities');"-->
-                    <a href="javascript:;" onclick="show('panel11')">Tool Capabilities</a>
-                  </li>
-                  <li class="tab-title tab-title-big">
-                    <a href="javascript:;" onclick="show('panel21')">Scenarios</a> <!--onclick="resetSelection('styledSelect_Scenarios');"-->
+                  <li class="tab-title tab-title-big active" id="tabCapabilities"> 
+                    <a>Tool Capabilities</a>
                   </li>
                 </ul>
                 <div class="tabs-content">
@@ -68,7 +66,7 @@
                     <div class="row">
                     <h5 class="subheader text-center tabdescription">Explore Integration Bus concepts by following simple tutorials</h5>
                     <div>
-                      <select size="46" id="styledSelect_Tool_Capabilities" name="tutorials" onchange="resetSelection('styledSelect_Scenarios');changeFunc('styledSelect_Tool_Capabilities')">
+                      <select size="46" id="styledSelect_Tool_Capabilities" name="tutorials" onchange="changeFunc('styledSelect_Tool_Capabilities')">
                       </select>
                     </div>
                     <p id="tutorialDesc_styledSelect_Tool_Capabilities">
@@ -92,33 +90,6 @@
                     <hr>
                     </div>
                   </div>
-                  <div class="content" id="panel21">
-						<h5 class="subheader text-center tabdescription">Explore powerful Integration Bus capabilities through integrated scenarios</h5>
-                  <div>
-                    <select size="46" id="styledSelect_Scenarios" name="tutorials" onchange="resetSelection('styledSelect_Tool_Capabilities');changeFunc('styledSelect_Scenarios')">
-                    </select>
-                  </div>
-                  
-                  <p id="tutorialDesc_styledSelect_Scenarios">
-                    Please select a tutorial...
-                  </p>
-
-                  <div class="row"> 
-                    <div class="small-offset-3 small-3 medium-offset-3 medium-3 large-offset-3 large-3 columns text-center">
-                      <action>
-                        <div class="radius button" id="viewDetails" onclick="viewDetails('styledSelect_Scenarios')"> View Details
-                        </div>
-                      </action>
-                    </div>
-                    <div class="small-3 medium-3 large-3 columns left text-center">
-                      <action>
-                        <div class="radius button" id="startTutorial" onclick="startTutorial('styledSelect_Scenarios')"> Start Tutorial
-                        </div>
-                      </action>
-                    </div>
-                  </div>
-                  <hr>
-                  </div>
                 </div><!-- Tab content -->
               </div>
             </div>
@@ -126,9 +97,9 @@
         </div><!-- columns-11 --> 
       </div><!-- row -->
  </div></body>
-		<script src="../js/vendor/jquery.js"></script>
-		<script src="../js/vendor/foundation.min.js"></script>
-		<script src="../js/main.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/jquery.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/vendor/foundation.min.js"></script>
+		<script src="http://ot4i.github.io/iib-tutorials/js/main.js"></script>
 	</body>
 <!-- body::End -->
 

@@ -25,9 +25,10 @@
 		<title>IBM Integration Bus V10 Tutorial</title>
 
     	<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/app.css" />
     	
-    	<script src="../js/iibv10/json2.js"></script>
-    	<script src="../js/iibv10/js2java.js"></script>
+    	<script src="../js/json2.js"></script>
+    	<script src="../js/js2java.js"></script>
   		<script src="../js/vendor/modernizr.js"></script>
 	</head>
 <!-- header::End -->
@@ -56,12 +57,12 @@
               <div class="columns">
 
                 <ul class="tabs" id="tutorialCategories"> 
-                  <li class="tab-title tab-title-big active"> <!-- onclick="resetSelection('styledSelect_Tool_Capabilities');"-->
-                    <a href="javascript:;" onclick="show('panel11')">Tool Capabilities</a>
+                  <li class="tab-title tab-title-big active" id="tabCapabilities"> 
+                    <a>Tool Capabilities</a>
                   </li>
-                  <li class="tab-title tab-title-big">
-                    <a href="javascript:;" onclick="show('panel21')">Scenarios</a> <!--onclick="resetSelection('styledSelect_Scenarios');"-->
-                  </li>
+                  <!--li class="tab-title tab-title-big">
+                    <a href="javascript:;" onclick="show('panel21')">Scenarios</a>
+                  </li-->
                 </ul>
                 <div class="tabs-content">
                   <div class="content active" id="panel11">
@@ -91,33 +92,6 @@
                     </div>
                     <hr>
                     </div>
-                  </div>
-                  <div class="content" id="panel21">
-						<h5 class="subheader text-center tabdescription">Explore powerful Integration Bus capabilities through integrated scenarios</h5>
-                  <div>
-                    <select size="46" id="styledSelect_Scenarios" name="tutorials" onchange="resetSelection('styledSelect_Tool_Capabilities');changeFunc('styledSelect_Scenarios')">
-                    </select>
-                  </div>
-                  
-                  <p id="tutorialDesc_styledSelect_Scenarios">
-                    Please select a tutorial...
-                  </p>
-
-                  <div class="row"> 
-                    <div class="small-offset-3 small-3 medium-offset-3 medium-3 large-offset-3 large-3 columns text-center">
-                      <action>
-                        <div class="radius button" id="viewDetails" onclick="viewDetails('styledSelect_Scenarios')"> View Details
-                        </div>
-                      </action>
-                    </div>
-                    <div class="small-3 medium-3 large-3 columns left text-center">
-                      <action>
-                        <div class="radius button" id="startTutorial" onclick="startTutorial('styledSelect_Scenarios')"> Start Tutorial
-                        </div>
-                      </action>
-                    </div>
-                  </div>
-                  <hr>
                   </div>
                 </div><!-- Tab content -->
               </div>

@@ -1,0 +1,10 @@
+html{font-size:85%;margin:0 10px}
+div.manager-container{padding:0 10px;max-width:1200px;margin:auto}
+.icon-image{display:inline}
+h5.tabdescription{margin:10px 0}
+h4.tkaction{margin-top:10px;text-align:center}
+select#styledSelect_Tool_Capabilities,select#styledSelect_Scenarios{height:200px}
+/*ul#tutorialCategories li{min-width:110px}*/
+ul#tutorialCategories li a{padding-left:0;padding-right:0; cursor:default;}
+div#viewDetails,div#startTutorial{min-width:60px;padding:5px}
+ul#tutorialCategories li#tabCapabilities {float:none;width:100% !important; margin:0 }

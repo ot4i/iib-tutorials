@@ -1,0 +1,286 @@
+{
+"version":"0.5",
+"description":"Tutorial Listing for Tutorial Framework.",
+"separatorRepoMetadataJSON":{},
+ 	"_comment":"Content from this URL https://github.com/ot4i/ot4i.github.io/blob/master/tutorials/en/repo_metadata.json",
+	"managerUrl":"http://ot4i.github.io/tutorials",
+	"managerVersion": "1.0",
+	"downloadableForLocalInstall":"https://github.com/ot4i/tutorials/releases/download/localInstall.zip",
+	"categories": 
+	[
+		{
+			"name":"Tool Capabilities",
+			"description":"Explore Integration Bus concepts by following simple tutorials.",
+			"descriptionUrl":"http://ot4i.github.io/tutorials/en/categories/Tools_Category_overview.htm",
+			"iibVersions": "",
+			"visible": "true",
+			"tutorials":
+			[
+				{
+					"name":"Integration services (SOAP/HTTP inputs)",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc":"Learn about integration services that use SOAP/HTTP inputs in IBM Integration Bus by exploring this simple example.",
+					"detailsURL" : "http://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/details.html",
+					"stepsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/steps.html",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial1PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialONE.bar",
+					"visible"	: true,
+					"tags"	: "mq;configuration",
+					"isPattern"	: false,
+					"isFavorite": true,
+					"isDefault" : true,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial1App/bschema1/Tutorial1Flow.msgflow"
+						},
+						{
+						"id" : "MainSchema",
+						"editor" : "dfdl",
+						"wspath" : "<workspace>/Tutorial1App/taderc99.xsd"
+						},
+						{
+						"id" : "MainScript",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial1App/iib_queues_create.mqsc"
+						}
+					]
+				},
+				{
+					"name" : "Tutorial One",
+					"version"	: "",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "This is a short description of Tutorial One! :)",
+					"detailsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/details.html",
+					"stepsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/steps.html",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial1PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialONE.bar",
+					"visible"	: false,
+					"tags"	: "mq;configuration",
+					"isPattern"	: true,
+					"isFavorite": true,
+					"isDefault" : false,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial1App/bschema1/Tutorial1Flow.msgflow"
+						},
+						{
+						"id" : "MainSchema",
+						"editor" : "dfdl",
+						"wspath" : "<workspace>/Tutorial1App/taderc99.xsd"
+						},
+						{
+						"id" : "MainScript",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial1App/iib_queues_create.mqsc"
+						}
+					]
+				},
+				{
+					"name" : "Tutorial Two",
+					"version"	: "",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "This is a short description of Tutorial Two! :)",
+					"detailsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial2/en/details.html",
+					"stepsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial2/en/steps.html",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial2PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialTWO.bar",
+					"visible"	: true,
+					"tags"	: "mq;configuration",
+					"isPattern"	: false,
+					"isFavorite": true,
+					"isDefault" : false,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial2App/Tutorial2Flow.msgflow"
+						},
+						{
+						"id" : "MainEsql",
+						"editor" : "",
+						"wspath" : "<workspace>/Tutorial2App/HTTPFlow_Compute.esql"
+						},
+						{
+						"id" : "MainMessage",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial2App/HTTPFlow_inputMessage.xml"
+						}
+					]
+				}
+			]
+		}, 
+		{
+			"name":"Scenarios",
+			"description":"Explore powerful Integration Bus capabilities through integrated scenarios.",
+			"descriptionUrl":"http://ot4i.github.io/tutorials/en/categories/Scenario_Category_overview.htm",
+			"iibVersions": "",
+			"visible": "true",
+			"tutorials":
+			[
+				{
+					"name" : "GDM Mapper with VCard data",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "This is a short description of Tutorial One! :)",
+					"detailsURL" : "http://ot4i.github.io/DFDL-JSON-GDM-tutorial/",
+					"stepsURL" : "http://ot4i.github.io/DFDL-JSON-GDM-tutorial/",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial1PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialONE.bar",
+					"visible"	: true,
+					"tags"	: "mq;configuration",
+					"isPattern"	: false,
+					"isFavorite": true,
+					"isDefault" : false,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial1App/bschema1/Tutorial1Flow.msgflow"
+						},
+						{
+						"id" : "MainSchema",
+						"editor" : "dfdl",
+						"wspath" : "<workspace>/Tutorial1App/taderc99.xsd"
+						},
+						{
+						"id" : "MainScript",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial1App/iib_queues_create.mqsc"
+						}
+					]
+				},
+				{
+					"name" : "Tutorial four",
+					"version"	: "",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "This is a short description of Tutorial four! :)",
+					"detailsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/details.html",
+					"stepsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial1/en/steps.html",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial1PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialONE.bar",
+					"visible"	: false,
+					"tags"	: "mq;configuration",
+					"isPattern"	: false,
+					"isFavorite": true,
+					"isDefault" : false,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial1App/bschema1/Tutorial1Flow.msgflow"
+						},
+						{
+						"id" : "MainSchema",
+						"editor" : "dfdl",
+						"wspath" : "<workspace>/Tutorial1App/taderc99.xsd"
+						},
+						{
+						"id" : "MainScript",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial1App/iib_queues_create.mqsc"
+						}
+					]
+				},
+				{
+					"name" : "Tutorial Five",
+					"version"	: "",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "This is a short description of Tutorial Five! :)",
+					"detailsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial2/en/details.html",
+					"stepsURL" : "https://cdn.rawgit.com/ekharlamov/ot4i.tutorials/master/tutorial2/en/steps.html",
+					"zipURL" : "https://github.com/ekharlamov/ot4i.tutorials/releases/download/V1/Tutorial2PI.zip",
+					"barFile" : "<workspace>/BARfiles/tutorialTWO.bar",
+					"visible"	: true,
+					"tags"	: "mq;configuration",
+					"durationText" : "This tutorial will take approximately 5 minutes",
+					"isPattern"	: true,
+					"isFavorite": true,
+					"isDefault" : true,
+					"editorResPaths" : 
+					[
+						{
+						"id" : "MainFlow",
+						"editor" : "flow",
+						"wspath" : "<workspace>/Tutorial2App/Tutorial2Flow.msgflow"
+						},
+						{
+						"id" : "MainEsql",
+						"editor" : "",
+						"wspath" : "<workspace>/Tutorial2App/HTTPFlow_Compute.esql"
+						},
+						{
+						"id" : "MainMessage",
+						"editor" : "text",
+						"wspath" : "<workspace>/Tutorial2App/HTTPFlow_inputMessage.xml"
+						}
+					]
+				}
+			]
+		}
+	],
+"separatorFrameworkListJSON":{},
+	"header":
+	  {
+	    "lang":"en-us",
+	    "charset":"UTF-8",
+	    "metaDescription":"IBM Integration Bus V10 Tutorial",
+	    "metaAuthor":"IBM",
+	    "keywords":"keywords",
+	    "robots":"index,follow",
+	    "source":"IBM Integration Bus V10 Tutorial"
+	  },
+ 	"pageContent": 
+	{
+	"navItems":
+		{
+			"_common":
+			{
+			  "headlineMain":"IBM Integration Bus V10",
+			  "headlineSub":"",
+			  "select":"Please select a tutorial..."
+			},
+			"pageListing":
+			{
+			  "pageTitle":"Tutorial Listing",
+			  "headlineMain":"IBM Integration Bus V10",
+			  "headlineSub":"Show Me",
+			  "section1":"Here you can explore and learn about IBM Integration Bus using tutorials.",
+			  "section2":"What are you interested in?",
+			  "dropdownSize":46,
+			  "allTimeFavs":"ALL-TIME FAVORITES",
+			  "tabTools":
+			  {
+			    "_comments":"Tab for Tool capabiliities.",
+			    "text":"Tool Capabilities", 
+			    "description":"Explore Integration Bus concepts by following simple tutorials"
+			  },
+			  "tabScenarios":
+			  {
+			    "_comments":"Tab for scenarios.",
+			    "text":"Scenarios", 
+			    "description":"Explore powerful Integration Bus capabilities through integrated scenarios"
+			  },
+			  "buttonViewDetails":
+			  {
+			    "_comments":"formal phrase == 'View Details', casual phrase == '?'",
+			    "text":"View Details"
+			  },
+			  "buttonStartTutorial":
+			  {
+			    "_comments":"formal phrase == 'Start Tutorial', casual phrase == '?'",
+			    "text":"Start Tutorial"
+			  }
+			} 
+		}
+	}
+}

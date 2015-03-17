@@ -195,7 +195,7 @@
           alert( 'a java error in javaGetTutorialsInfoFunction occurred: ' + e.message );
       }//catch
 	  //add the tutorials to the select widget.
-	  var Ids = ["styledSelect_Tool_Capabilities", "styledSelect_Scenarios"];
+	  var Ids = ["styledSelect_Tool_Capabilities"];
 
 	  //loop over all the tutorials in the list
 	  for (var j = 0; j < tutorials.length; j++)

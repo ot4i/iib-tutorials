@@ -1,0 +1,44 @@
+<!DOCTYPE html><% /* DNA-Comment: This DOCTYPE means this is an HTML5 document - http://www.w3.org/html/wg/drafts/html/master/single-page.html  */ %>
+<html class="no-js" lang="en">
+<% if (public._data) { %> <% /* DNA-Comment: Make sure we have header data  */ %>
+	<% var header = public._data.header %>
+<!-- header::Start -->
+	<head>
+		<!-- Use Internet Explorer 9 Standards mode for Eclipse Browser Control - https://www.eclipse.org/swt/faq.php#browsernativeie and https://msdn.microsoft.com/en-us/library/jj676915%28v=vs.85%29.aspx -->
+  		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		
+		<!-- Next 2 http=equiv headers required to disable caching the Eclipse Browser Widget -->
+		<meta http-equiv="Pragma" content="no-cache">
+  		<meta http-equiv="Expires" content="-1">
+
+		<meta charset="<%= header.charset %>"> <% /* DNA-Comment: HTML 5 tag for encoding, replaced with HTTP content type declaration for older browsers */ %>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="copyright" content="Copyright IBM Corporation 2014" />
+		<meta name="abstract" content="<%= header.metaDescription %>">
+		<meta name="author" content="<%= header.metaAuthor %>">
+		<meta name="description" content="<%= header.metaDescription %>">
+		<meta name="keywords" content="<%= header.keywords %>" > 
+		<meta name="robots" content="<%= header.robots %>">
+		<meta name="source" content="<%= header.source %>" /> 
+		
+		<title><%= header.source %></title>
+
+    	<link rel="stylesheet" href="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathCss %>" /><% /* DNA-Comment: Foundation5 5.4.7 CSS */ %>
+		<link rel="stylesheet" href="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathCssApp %>" /><% /* DNA-Comment: Foundation5 5.4.7 overrides */ %>
+    	
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathJson2 %>"></script><% /* DNA-Comment: IIB eclipse JavaScript to call Java APIs */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathJs2java %>"></script><% /* DNA-Comment: IIB eclipse JavaScript to call Java APIs */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathJs2javaSteps %>"></script><% /* DNA-Comment: IIB eclipse JavaScript to call Java APIs */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathFoundationModernizr %>"></script><% /* DNA-Comment: Foundation5 5.4.7 modernizr */ %>
+	</head>
+<!-- header::End -->
+<!-- body::Start -->
+		<%- yield %><% /* DNA-Comment: Insert content here. */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathFoundationJquery %>"></script><% /* DNA-Comment: Foundation5 5.4.7 jquery */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathFoundationJs %>"></script><% /* DNA-Comment: Foundation5 5.4.7 JavaScript */ %>
+		<script src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathJs %>"></script><% /* DNA-Comment: Custom JavaScript */ %>
+	</body>
+<!-- body::End -->
+<% } %>
+</html>

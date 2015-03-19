@@ -9,6 +9,9 @@ ul#tutorialCategories li a{padding-left:0;padding-right:0; cursor:default;}
 div#viewDetails,div#startTutorial{min-width:60px;padding:5px}
 ul#tutorialCategories li#tabCapabilities {float:none;width:100% !important; margin:0 }
 
+ol ol { list-style: lower-alpha;}
+ol ol ol { list-style: lower-roman;}
+
 .library, .project, .application, .uicontrol { font-weight: bold; }
 .filepath { font-family: monospace; }
 .cmdname { font-weight: bold; font-family: monospace; }

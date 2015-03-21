@@ -8,14 +8,13 @@ function show(clickId) {
 			var tabcontentpanels = tabcontentdivs.querySelectorAll('.content');
 			
 			for (var j=0;j<tabcontentpanels.length;j++) {
-				var tabClass = tabcontentpanels[j].className;
-				if (tabcontentpanels[j].id == clickId) {
-					if (tabClass.search("active")!=-1){
-						tabClass=tabClass + ' active';
+				if (tabcontentpanels[j].id == clickId) {	
+					if (tabcontentpanels[j].className.search("active")==-1) {
+						tabcontentpanels[j].className=tabcontentpanels[j].className + ' active';
 						tabs[j].className=tabs[j].className + ' active';
 					}
 				} else {
-					tabClass=tabClass.replace('active',"");
+					tabcontentpanels[j].className=tabcontentpanels[j].className.replace('active',"");
 					tabs[j].className=tabs[j].className.replace('active','');
 				}
 			}

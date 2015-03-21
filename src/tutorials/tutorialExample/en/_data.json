@@ -1,5 +1,5 @@
 {
-    "version": "0.5",
+    "version": "0.6",
     "pageContent": 
 	{
         "_comments": "JSON object that contains data for page labels, buttons, etc.",

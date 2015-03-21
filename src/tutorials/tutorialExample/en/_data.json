@@ -18,6 +18,12 @@
                     "name": "Start Tutorial",
 					"method": "startTutorialFromDetailsScreen()",
 					"idName": "startTutorial"
+                },
+				"buttonViewDetails": 
+				{
+                    "name": "View Details",
+					"method": "viewDetails()",
+					"idName": "stepsViewDetails"	
                 }
             }
         }

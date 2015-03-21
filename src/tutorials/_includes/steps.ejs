@@ -30,10 +30,7 @@
 	<div class="row">          
 		  <div class="small-12 medium-12 large-12 columns">
 			<ul class="tabs vertical"> 
-				<li class="tab-title tab-title-small active"> 
-				  <a href="javascript:;" onclick="show('panel11');"><%= tutorialSteps.concept.overview.name %></a>
-				</li>
-				<li class="tab-title tab-title-small">
+				<li class="tab-title tab-title-small active">
 				  <a href="javascript:;" onclick="show('panel21');"><%= tutorialSteps.create.overview.name %></a> 
 				</li>
 				<li class="tab-title tab-title-small">
@@ -45,33 +42,7 @@
 			</ul>
 			<!-- editing -->
 			<div class="tabs-content panel-thin-blue vertical"> 
-			    <div class="content active" id="panel11">
-			    	<div class="small-12 medium-12 large-12 columns">
-				    	<div class="row content-details">
-					      	<h4><%= tutorialSteps.concept.overview.heading %></h4>
-					        <% var sections = tutorialSteps.concept.overview.sections %>
-						    <% for (var i in sections) { %>
-								<p> <%- sections[i].section %> </p>
-							<% } %>
-						</div>
-						<% if (tutorialSteps.concept.helpLinks) { %>	
-						<div class="row content-details">
-							<h4><%= tutorialSteps.concept.helpLinks.title %></h4>
-							<ul>
-							<% for (var i in tutorialSteps.concept.helpLinks.details) { %>
-								<% var link = tutorialSteps.concept.helpLinks.details[i] %>
-								<% if ((link.type) && (link.type == "web")) { %>
-								<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
-								<% } else { %>								
-								<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>')" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
-							   <% } %>	
-							<% } %>
-							</ul>
-						</div>	
-						<% } %>	
-					</div>
-				</div>
-		    	<div class="content" id="panel21">
+		    	<div class="content active" id="panel21">
 		    		<% if (tutorialSteps.create.actions) { %>
 		    		<div class="small-10 medium-10 large-10 columns divider">
 					<% } else { %>

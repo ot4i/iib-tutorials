@@ -48,7 +48,7 @@
 		            	"shortDesc"     : "Split a large input message into individual records, using Java transformation code, in a memory-efficient manner.",
 		            	"detailsURL"    : "http://ot4i.github.io/large-messaging-tutorial/en/details.html",
 		            	"stepsURL"      : "http://ot4i.github.io/large-messaging-tutorial/en/steps.html",
-		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1/LargeMessages.zip",
+		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1.1/LargeMessagingPI.zip",
 		            	"barFile"       : "<workspace>/BARfiles/LargeMessages.bar",
 		            	"visible"	: "true",
 		            	"tags"		: "java;transformation",

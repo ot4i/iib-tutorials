@@ -33,7 +33,22 @@
         <% for (var i in sections) { %>
         <p> <%= sections[i].section %> </p>
       <% } %>
-      </div>
+      </div>	  
+		<% if (tutorialDetails.helpLinks) { %>
+		<div class="row content-details">
+			<h4><%= tutorialDetails.helpLinks.title %></h4>
+			<ul>
+			<% for (var i in tutorialDetails.helpLinks.details) { %>
+				<% var link = tutorialDetails.helpLinks.details[i] %>
+				<% if ((link.type) && (link.type == "web")) { %>
+				<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+				<% } else { %>								
+				<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>');" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+			   <% } %>	
+			<% } %>
+			</ul>
+		</div>
+		<% } %>		  
     </div><!-- End Columns -->
     <div class="small-offset-1 small-5 medium-offset-1 medium-5 large-offset-1 large-5 columns">
       <div class="row">

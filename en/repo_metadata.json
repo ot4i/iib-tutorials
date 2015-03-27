@@ -42,6 +42,174 @@
 							]
 				},
 				{
+		            	"name"          : "Transformation using a Map in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to transform data using a Map in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationMap/TransformationMap/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationMap/TransformationMap/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationMap/releases/download/V1.0/TransformationMapPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Mapproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Map",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Map/Transformation_Map.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Map"
+							}
+						]
+				},				
+				{
+		            	"name"          : "Transformation using ESQL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Compute node to transform data using ESQL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationESQL/TransformationESQL/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationESQL/TransformationESQL/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationESQL/releases/download/V1.0/TransformationESQLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_ESQLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;esql",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_ESQL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_ESQL/Transformation_ESQL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_ESQL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationJava/TransformationJava/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationJava/TransformationJava/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationJava/releases/download/V1.0/TransformationJavaPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Javaproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Java:Transformation_JavaJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Java/Transformation_Java.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Java"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java (JAXB) in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java (JAXB) in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationJavaJAXB/TransformationJavaJAXB/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationJavaJAXB/TransformationJavaJAXB/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationJavaJAXB/releases/download/V1.0/TransformationJavaJAXBPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_JavaJAXBproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_JavaJAXB:Transformation_JavaJAXBJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_JavaJAXB/Transformation_JavaJAXB.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_JavaJAXB"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using XSL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use an XSL Transform node to transform data using XSL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationXSL/TransformationXSL/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationXSL/TransformationXSL/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationXSL/releases/download/V1.0/TransformationXSLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_XSLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;xsl",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_XSL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_XSL/Transformation_XSL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_XSL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using .NET in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a .NETCompute node to transform data using C# in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationDotNet/TransformationDotNet/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationDotNet/TransformationDotNet/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationDotNet/releases/download/V1.0/TransformationDotNetPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_DotNetproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;.NET",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_DotNet:Transformation_DotNet_DotNET",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_DotNet/Transformation_DotNet.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_DotNet"
+							}
+						]
+				},				
+				{
 		            	"name"          : "Large messaging",
 		            	"version"		: "1.0",
 		            	"iibVersions"	: "10.*-11.*",

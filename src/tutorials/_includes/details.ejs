@@ -34,7 +34,8 @@
         <p> <%= sections[i].section %> </p>
       <% } %>
       </div>	  
-		<% if (tutorialDetails.helpLinks) { %>
+		<!-- help links do not work in details page for GA 
+        <% if (tutorialDetails.helpLinks) { %>
 		<div class="row content-details">
 			<h4><%= tutorialDetails.helpLinks.title %></h4>
 			<ul>
@@ -49,6 +50,8 @@
 			</ul>
 		</div>
 		<% } %>		  
+        -->
+        
     </div><!-- End Columns -->
     <div class="small-offset-1 small-5 medium-offset-1 medium-5 large-offset-1 large-5 columns">
       <div class="row">

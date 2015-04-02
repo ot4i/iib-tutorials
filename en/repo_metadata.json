@@ -264,6 +264,102 @@
 							"path": "HTTPInputApplication"
 							}
 						]
+				},
+                        	{
+                                "name"          : "Modeling CSV data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model CSV data using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-csv-tutorial/releases/download/v1.0.0/dfdlcsv_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;csv",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "CommaSeparatedValues",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainDataFile",
+                                                                "editor" : "text",
+                                                                "wspath" : "<workspace>/CommaSeparatedValues/simpleCSV.txt"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                        	{
+                                "name"          : "Modeling COBOL data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model COBOL data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-cobol-tutorial/releases/download/v1.0.0/dfdlcobol_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;cobol",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "COBOL-Purchases",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainCopybook",
+                                                                "editor" : "lpex",
+                                                                "wspath" : "<workspace>/COBOL-Purchases/PurchaseData.cpy"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                        	{
+                                "name"          : "Modeling EDIFACT data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model EDIFACT data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-edifact-tutorial/releases/download/v1.0.0/dfdledifact_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;edifact",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "EDIFACT-D03B:EDIFACT-Common",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainSchema",
+                                                                "editor" : "dfdl",
+                                                                "wspath" : "<workspace>/EDIFACT-D03B/EDIFACT-SupplyChain-Messages-D.03B.xsd"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                                {
+                                "name"          : "Modeling ISO 8583 data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model ISO 8583 data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-iso8583-tutorial/releases/download/v1.0.0/dfdliso8583_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;iso8583",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "ISO8583",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainSchema",
+                                                                "editor" : "dfdl",
+                                                                "wspath" : "<workspace>/ISO8583/1987/ISO8583_1987.xsd"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
 				}
 			]
 		}, 

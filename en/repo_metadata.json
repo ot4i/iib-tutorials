@@ -265,6 +265,35 @@
 							}
 						]
 				},
+				{
+        				"name": "Subscribing to receive MQTT events",
+        				"version": "1.0",
+        				"iibVersions": "10.*-11.*",
+        				"shortDesc": "Learn how to use the MQTT Subscribe node to receive data from an MQTT broker.",
+        				"barFile": "<workspace>/MQTTSubscribe/MQTTSubscribe.bar",
+        				"visible": "true",
+        				"tags": "service;http;soap;transformation",
+        				"isPattern": "false",
+        				"isFavorite": "true",
+         				"projects": "MQTTSubscribe",
+         				"editorResPaths": [
+           				{
+        					"id": "MQTTSubscribe",
+						"editor": "flow",
+						"wspath": "<workspace>/MQTTSubscribe/MQTTSubscribe.msgflow"
+			            	}
+					],
+					"deployedResources": [
+					{
+						"type": "application",
+						"path": "MQTTSubscribe"
+					}
+					],
+					"id": "MQTTSubscribe",
+					"detailsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/details.html",
+					"stepsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/steps.html",
+					"zipURL": "https://github.com/ot4i/mqtt-subscribe-tutorial/releases/download/v1.0/MQTTSubscribe.v1.0.PI.zip"
+				},
                         	{
                                 "name"          : "Modeling CSV data by using DFDL",
                                 "version"	: "1.0",

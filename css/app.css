@@ -18,6 +18,7 @@ ol ol ol { list-style: lower-roman;}
 .filepath { font-family: monospace; }
 .cmdname { font-weight: bold; font-family: monospace; }
 .option, .property { font-family: monospace; }
+.view, .perspective { font-weight: bold; }
 .kwd { font-weight: bold; }
 .icon { font-style : italic;}
 .varname { font-style : italic;}

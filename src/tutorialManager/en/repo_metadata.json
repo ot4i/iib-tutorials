@@ -264,6 +264,30 @@
 							"path": "HTTPInputApplication"
 							}
 						]
+				},
+				{
+					"name" : "Integration using TCP/IP nodes",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "Learn how to use TCP/IP nodes for integration with external applications using TCP/IP sockets. ",
+					"detailsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/details.html",
+					"stepsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/steps.html",
+					"zipURL" : "https://github.com/ot4i/tcpip-input-tutorial/releases/download/1.0/TCPIP_Project_Interchange.zip",
+					"barFile" : "",
+					"visible"	: "true",
+					"tags"	: "tcp;tcpip",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "TCPIPServer:TCPIPClient:DataLibrary",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/TCPIPServer/TCPIPProvider.msgflow"
+						}
+					],
+					"deployedResources": [
+					]
 				}
 			]
 		}, 

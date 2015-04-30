@@ -169,6 +169,54 @@
                                 "deployedResources": [
                                                      ]
                         	}, 
+                        	{
+                                "name"          : "Modeling HL7 data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+           	                "shortDesc"     : "Learn how to model HL7 healthcare data using Data Format Description Language (DFDL)",
+           	                "detailsURL"    : "http://ot4i.github.io/dfdl-hl7-tutorial/dfdlhl7/en/details.html",
+           	                "stepsURL"      : "http://ot4i.github.io/dfdl-hl7-tutorial/dfdlhl7/en/steps.html",
+           	                "zipURL"        : "https://github.com/ot4i/dfdl-hl7-tutorial/releases/download/v1.0.0/dfdlhl7_PI_v1.zip",
+           	                "barFile"       : "",
+           	                "visible"	: "true",
+           	                "tags"		: "dfdl;hl7",
+           	                "isPattern"	: "false",
+           	                "isFavorite"	: "true",
+           	                "projects"	: "HL7-2.7",
+       	                        "editorResPaths": [
+           				{
+       		        	        	"id" : "MainSchema",
+       				                "editor" : "dfdl",
+    			  	                "wspath" : "<workspace>/HL7-2.7/GenericHL7.xsd"
+       			                }
+        		          ],
+                		"deployedResources": [
+				     ]
+	                        }, 
+	                        {
+       	                        "name"          : "Modeling Toshiba 4690 TLog data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+           	                "shortDesc"     : "Learn how to model Toshiba 4690 Point of Sale Transaction Log data by using Data Format Description Language (DFDL)",
+           	                "detailsURL"    : "http://ot4i.github.io/dfdl-tlog-tutorial/dfdltlog/en/details.html",
+           	                "stepsURL"      : "http://ot4i.github.io/dfdl-tlog-tutorial/dfdltlog/en/steps.html",
+           	                "zipURL"        : "https://github.com/ot4i/dfdl-tlog-tutorial/releases/download/v1.0.0/dfdltlog_PI_v1.zip",
+           	                "barFile"       : "",
+           	                "visible"	: "true",
+           	                "tags"		: "dfdl;tlog;ace;4690",
+           	                "isPattern"	: "false",
+           	                "isFavorite"	: "true",
+           	                "projects"	: "TLOG-ACE",
+       	                        "editorResPaths": [
+           				{
+       		        	        	"id" : "MainSchema",
+       				                "editor" : "dfdl",
+    			  	                "wspath" : "<workspace>/TLOG-ACE/TlogAce.xsd"
+       			                }
+        		          ],
+                		"deployedResources": [
+				     ]
+	                        }, 
                                 {
                                 "name"          : "Modeling ISO 8583 data by using DFDL",
                                 "version"	: "1.0",

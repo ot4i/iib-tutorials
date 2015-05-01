@@ -266,10 +266,10 @@
 						]
 				},
 				{
-        				"name": "Subscribing to receive MQTT events",
+        				"name": "Receiving MQTT messages by subscribing to MQTT topics",
         				"version": "1.0",
         				"iibVersions": "10.*-11.*",
-        				"shortDesc": "Learn how to use the MQTT Subscribe node to receive data from an MQTT broker.",
+        				"shortDesc": "Learn how to use the MQTTSubscribe node to receive messages from an MQTT server.",
         				"barFile": "<workspace>/MQTTSubscribe/MQTTSubscribe.bar",
         				"visible": "true",
         				"tags": "service;http;soap;transformation",

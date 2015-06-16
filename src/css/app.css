@@ -1,0 +1,27 @@
+html{font-size:85%;margin:0 10px}
+div.manager-container{padding:0 10px;max-width:1200px;margin:auto}
+.icon-image{display:inline}
+h5.tabdescription{margin:10px 0}
+h4.tkaction{margin-top:10px;text-align:center}
+select#styledSelect_Tool_Capabilities,select#styledSelect_Scenarios{height:200px}
+/*ul#tutorialCategories li{min-width:110px}*/
+ul#tutorialCategories li a{padding-left:0;padding-right:0; cursor:default;}
+div#viewDetails,div#startTutorial{min-width:60px;padding:5px}
+ul#tutorialCategories li#tabCapabilities {float:none;width:100% !important; margin:0 }
+div#stepsViewDetails { margin: 0 0 0 10px; position: relative; top: -3px;}
+h4.title { margin-bottom: 0; }
+
+ol ol { list-style: lower-alpha;}
+ol ol ol { list-style: lower-roman;}
+
+.library, .project, .application, .uicontrol { font-weight: bold; }
+.filepath { font-family: monospace; }
+.cmdname { font-weight: bold; font-family: monospace; }
+.option { font-family: monospace; }
+.kwd { font-weight: bold; }
+.varname { font-style : italic;}
+.parmname { font-weight: bold; font-family: monospace; white-space: nowrap; }
+.code { font-family: monospace; }
+.userinput { font-family: monospace; }
+.msgph { font-family: monospace; }
+.systemoutput { font-family: monospace; }

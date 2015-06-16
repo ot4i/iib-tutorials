@@ -1,0 +1,98 @@
+<% var header = public._data.header %>
+<% var content = thisTutorial.pageContent.navItems %>
+<% var tutorialCommon = thisTutorial.tutorial._common %>
+<% var tutorialDetails = thisTutorial.tutorial.pageDetails %>
+<body>
+    <!-- body content here -->
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <p> </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-9 medium-9 large-9 columns">
+      <h4><%= tutorialCommon.name %></h4>
+    </div>
+    <div class="small-3 medium-3 large-3 columns"> 
+      <!--a href="javascript:;" onclick="openHelpSystem('<%= tutorialCommon.helpLink.link %>');" class="small right helplink"><%= tutorialCommon.helpLink.text %></a-->
+    </div>
+  </div> 
+  <hr />
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <h5> <%= tutorialCommon.shortDescription %> </h5>
+    </div>
+  </div>
+  <div class="row content-details">
+    <div class="small-6 medium-6 large-6 columns">
+      <div class="row">
+        <h5> <%= tutorialDetails.summary.overviewName %> </h5>
+      </div>
+      <div class="row">
+      <% var sections = tutorialDetails.summary.sections %>
+        <% for (var i in sections) { %>
+        <p> <%= sections[i].section %> </p>
+      <% } %>
+      </div>	  
+		<!-- help links do not work in details page for GA 
+        <% if (tutorialDetails.helpLinks) { %>
+		<div class="row content-details">
+			<h4><%= tutorialDetails.helpLinks.title %></h4>
+			<ul>
+			<% for (var i in tutorialDetails.helpLinks.details) { %>
+				<% var link = tutorialDetails.helpLinks.details[i] %>
+				<% if ((link.type) && (link.type == "web")) { %>
+				<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+				<% } else { %>								
+				<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>');" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+			   <% } %>	
+			<% } %>
+			</ul>
+		</div>
+		<% } %>		  
+        -->
+        
+    </div><!-- End Columns -->
+    <div class="small-offset-1 small-5 medium-offset-1 medium-5 large-offset-1 large-5 columns">
+      <div class="row">
+        <div class="panel radius" style="margin:0px; margin-bottom:10px; padding:5px;">
+          <div class="row">
+            <div class="small-2 medium-2 large-2 columns">
+              <img class="icon-image" src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathClockIcon %>" />
+            </div>
+            <div class="small-10 large-10 columns">
+              <%= tutorialCommon.durationText %> <b><%= tutorialCommon.durationTime %></b>.
+            </div>
+          </div>
+          <div class="row" style="margin-left: 1rem; text-align: center;">
+            <action>
+              <div class="small radius button" id="<%= content._common.buttonStartTutorial.idName %>" onclick="<%= content._common.buttonStartTutorial.method %>;"> <%= content._common.buttonStartTutorial.name %>
+            </div>
+            </action>
+            <div class="small radius button" id="<%= content._common.buttonBackToGallery.idName %>" onclick="<%= content._common.buttonBackToGallery.method %>;"> <%= content._common.buttonBackToGallery.name %>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="row content-details">
+        <div class="small-6 medium-6 large-6 columns">
+          <h5> <%= tutorialDetails.topicsName %> </h5>
+          <ul>
+            <% var topics = tutorialDetails.topicList %>
+            <% for (var i in topics) { %>
+              <li><%= topics[i].title %></li>
+            <% } %>
+          </ul>
+        </div>
+        <div class="small-6 medium-6 large-6 columns">
+          <h5><%= tutorialDetails.outcomesName %> </h5>
+          <ul>
+          <% var outcomes = tutorialDetails.outcomeList %>
+          <% for (var i in outcomes) { %>
+            <li><%= outcomes[i].title %></li>
+          <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

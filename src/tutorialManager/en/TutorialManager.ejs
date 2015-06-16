@@ -1,0 +1,71 @@
+<% var categoryTools = public.en._data.categories[0] %> <% /* DNA-Comment: Category for Tools Capabilities */ %>
+<% var tutorialTools = public.en._data.categories[0].tutorials %> <% /* DNA-Comment: Tutorials for Tools Capabilities */ %>
+
+<% var catagoryScenarios = public.en._data.categories[1] %> <% /* DNA-Comment: Category for Scenarios */ %>
+<% var tutorialScenarios = public.en._data.categories[1].tutorials %><% /* DNA-Comment: Tutorials for Scenarios */ %>
+
+<% var content = public.en._data.pageContent.navItems %><% /* DNA-Comment: Page labels */ %>
+<body onload="fillList()">
+  <!-- body content here -->
+  <div class="manager-container">
+  <div class="row">
+    <div class="large-offset-2 large-8 medium-offset-2 medium-8 small-offset-2 small-8 columns">
+		<div class="row">
+			  <h3><img class="icon-image" src="http://ot4i.github.io/iib-tutorials/images/icons/ibmdesign/booklet-guide_128.png" > <%= content.pageListing.headlineSub %></h3>
+		</div>
+	</div>
+  </div> 
+
+  <div class="row">
+           <div class="large-offset-2 large-8 medium-offset-2 medium-8 small-offset-2 small-8 columns">
+            <div class="row">
+              <div class="columns">
+                <h5 class="subheader"><%= content.pageListing.section1 %> <br /> <%= content.pageListing.section2 %> 
+                </h5>
+              </div>
+            </div>
+			<hr />
+            <div class="row"> 
+              <div class="columns">
+
+                <ul class="tabs" id="tutorialCategories"> 
+                  <li class="tab-title tab-title-big active" id="tabCapabilities"> 
+                    <a><%= content.pageListing.tabTools.text %></a>
+                  </li>
+                </ul>
+                <div class="tabs-content">
+                  <div class="content active" id="panel11">
+                    <div class="row">
+                    <h5 class="subheader text-center tabdescription"><%= content.pageListing.tabTools.description %></h5>
+                    <div>
+                      <select size="<%= content.pageListing.dropdownSize %>" id="styledSelect_Tool_Capabilities" name="tutorials" onchange="changeFunc('styledSelect_Tool_Capabilities');">
+                      </select>
+                    </div>
+                    <p id="tutorialDesc_styledSelect_Tool_Capabilities">
+                      <%= content._common.select %>
+                    </p>
+
+                    <div class="row">
+                      <div class="small-offset-3 small-3 medium-offset-3 medium-3 large-offset-3 large-3 columns text-center">
+                        <action>
+                          <div class="radius button" id="viewDetails" onclick="viewDetails('styledSelect_Tool_Capabilities')"> <%= content.pageListing.buttonViewDetails.text %>
+                          </div>
+                        </action>
+                      </div>
+                      <div class="small-3 medium-3 large-3 columns left text-center">
+                        <action>
+                          <div class="radius button" id="startTutorial" onclick="startTutorial('styledSelect_Tool_Capabilities')"> <%= content.pageListing.buttonStartTutorial.text %>
+                          </div>
+                        </action>
+                      </div>
+                    </div>
+                    <hr />
+                    </div>
+                  </div>
+                </div><!-- Tab content -->
+              </div>
+            </div>
+
+        </div><!-- columns-11 --> 
+      </div><!-- row -->
+ </div>

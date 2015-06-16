@@ -1,0 +1,273 @@
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+//Declare variables.
+$orange-dusty  : #e88a37;
+$orange-custom : #eb974e;
+$blue-dusty  : #0094d9;
+
+//Assign variables.
+$action-button: $orange-dusty;
+$button-main-color : $primary-color;
+
+//Set ovverrides variables.
+$top-bar-bg  : $white-smoke;
+$top-bar-outline: $iron;
+//$topbar-link-color: $oil;
+$topbar-link-color: $white-smoke;
+
+//Core HTML overrides
+hr 
+{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+//Style Overrides
+.top-bar 
+{ 
+  height: 44px; 
+  background: $top-bar-bg; 
+  text-align: center; 
+  top:0; 
+  z-index:1; 
+  border-bottom: 1px solid $top-bar-outline; 
+  box-shadow: rgba(0, 0, 0, .25) 0 1px 2px;
+}
+
+.top-bar .name h1 a 
+{
+  color: $oil;
+}
+
+//Style Extends
+.panel-thin
+{
+  @extend .panel;
+
+  margin: 0px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
+  min-height:200px;
+
+  img
+  {
+    height:150px;
+  }
+}
+
+//Style Custom
+  //-LVHT
+action .button 
+{
+    border: 0;
+    background: $orange-custom;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin:5px;
+}
+action .button:link 
+{
+  background: $orange-custom;
+}     
+action .button:visited 
+{
+  -webkit-box-shadow: 0px 4px 0px #a74d46;
+  -moz-box-shadow: 0px 4px 0px #a74d46;
+  box-shadow: 0px 4px 0px #a74d46;
+  background: #e78129;
+}     
+action .button:hover 
+{
+  background: $orange-custom;
+  color: white;
+}
+action .button:active 
+{
+  -webkit-box-shadow: 0px 4px 0px #a74d46;
+  -moz-box-shadow: 0px 4px 0px #a74d46;
+  box-shadow: 0px 4px 0px #a74d46;
+  background: #e78129;
+}
+
+.button.small
+{
+  padding: 5px 10px;
+}
+
+//Custom
+#tutorialDropDown
+{
+  height:5rem;
+}
+
+//Special Characters, use with span tag.
+.font-small
+{
+  font-size:2em;
+}
+
+.font-medium
+{
+  font-size:4em;
+}
+
+.simple-arrow-right
+{
+  &::after{
+    content:"\2192";
+  }
+}
+
+.arrowhead-right
+{
+  &::after
+  {
+    content:"\2192";
+  }
+}
+
+.outline-up
+{
+  margin: 0px;
+  padding: 0px;
+
+  &::after
+  {
+    content:"\21E7";
+  }
+}
+
+.rotate90
+{
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ transform: rotate(90deg);
+}
+
+.rotate180
+{
+ -webkit-transform: rotate(180deg);
+ -moz-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ -o-transform: rotate(180deg);
+ transform: rotate(180deg);
+}
+
+.placeholder 
+{
+  background-color: #ccc;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+select
+{
+  height: 100px;
+}
+
+ul.tabs
+{
+  line-height:0.8;
+}
+
+p
+{
+  margin-bottom: 0.5rem;
+}
+
+.tab-title-big 
+{
+  width: 45%;
+  border-top: 2px solid $ibmdesign-blue-60;
+  margin-left:10px;
+  text-align: center;
+}
+
+.tab-title-small 
+{
+  border-top: 2px solid $ibmdesign-blue-60;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.tabs.vertical 
+{
+  width: 15%;
+  max-width: 15%;
+}
+
+.tabs-content.vertical 
+{
+    width: 85%;
+    max-width: 85%;
+}
+
+.tabs .tab-title.active a {
+  background-color: $ibmdesign-blue-60;
+  color: #ffffff;
+}
+
+.video-wrapper {
+  position: relative;
+  height: 0;
+  width: 0;
+  padding: 13% 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-thin
+{
+  margin: 0px;
+  padding: 5px
+}
+
+.panel-thin-blue 
+{
+  margin: 0px;
+  padding: 5px;
+  border: 2px solid $ibmdesign-blue-60;
+}
+
+.divider
+{
+  border-right: 1px solid $ibmdesign-blue-60;
+  margin-bottom:1rem
+}
+
+.icon-image
+{
+  width: 30px;
+  height: 30px;
+  
+  display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.content-details
+{
+  padding: 0rem 0.5rem;
+}

@@ -1,0 +1,271 @@
+<% var header = public._data.header %>
+<% var content = thisTutorial.pageContent.navItems %>
+<% var tutorialCommon = thisTutorial.tutorial._common %>
+<% var tutorialSteps = thisTutorial.tutorial.pageSteps %>
+<body>
+  	<!-- body content here -->
+	<div class="row">
+	  <div class="small-12 medium-12 large-12 columns">
+	    <p> </p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="small-9 medium-9 large-9 columns">
+	    <h4 class="title"><%= tutorialCommon.name %> <action><div class="small radius button" id="<%= content._common.buttonViewDetails.idName %>" onclick="<%= content._common.buttonViewDetails.method %>"> <%= content._common.buttonViewDetails.name %></div> </action></h4>
+	  </div>
+	  <div class="small-3 medium-3 large-3 columns">
+		<a href="javascript:;" onclick="openHelpSystem('<%= tutorialCommon.helpLink.link %>');" class="small right helplink"><%= tutorialCommon.helpLink.text %></a> 
+	  </div>
+	</div> 
+	<hr />
+	<div class="row">
+		<div class="small-10 medium-10 large-10 columns">
+		<h5> <%= tutorialCommon.shortDescription %> </h5>
+		</div>
+		<div class="small-2 medium-2 large-2 columns">
+			<div class="small radius button right" id="<%= content._common.buttonBackToGallery.idName %>" onclick="<%= content._common.buttonBackToGallery.method %>"> <%= content._common.buttonBackToGallery.name %>
+			</div>
+		</div>
+	</div>
+	<div class="row">          
+		  <div class="small-12 medium-12 large-12 columns">
+			<ul class="tabs vertical"> 
+				<li class="tab-title tab-title-small active">
+				  <a href="javascript:;" onclick="show('panel21');"><%= tutorialSteps.create.overview.name %></a> 
+				</li>
+				<li class="tab-title tab-title-small">
+				  <a href="javascript:;" onclick="show('panel31');"><%= tutorialSteps.prepare.overview.name %></a> 
+				</li>
+				<li class="tab-title tab-title-small">
+				  <a href="javascript:;" onclick="show('panel41');"><%= tutorialSteps.run.overview.name %></a> 
+				</li>
+			</ul>
+			<!-- editing -->
+			<div class="tabs-content panel-thin-blue vertical"> 
+		    	<div class="content active" id="panel21">
+		    		<% if (tutorialSteps.create.actions) { %>
+		    		<div class="small-10 medium-10 large-10 columns divider">
+					<% } else { %>
+					<div class="small-12 medium-12 large-12 columns">
+					<% } %>
+				      	<div class="row content-details">
+					      	<h4><%= tutorialSteps.create.overview.heading %></h4>
+					        <% var sections = tutorialSteps.create.overview.sections %>
+						    <% for (var i in sections) { %>
+								<p> <%- sections[i].section %> </p>
+								<% if (sections[i].steps) { %>
+								<% var steps = sections[i].steps %>
+									<% if (steps.type == "ordered") { %>
+									<ol>
+									<% } else { %>
+									<ul>
+									<% } %>
+									<% for (var j in steps.details) { %>
+										<li> <%- steps.details[j].details %>
+										<% if (steps.details[j].substeps) { %>
+										<% var substeps = steps.details[j].substeps %>
+											<% if (substeps.type == "ordered") { %>
+											<ol>
+											<% } else { %>
+											<ul>
+											<% } %>
+												<% for (var k in substeps.details) { %>
+													<li> <%- substeps.details[k].details %></li>
+												<% } %>
+											<% if (substeps.type == "ordered") { %>
+											</ol>
+											<% } else { %>
+											</ul>
+											<% } %>
+										<% } %>
+										</li>
+									<% } %>
+									<% if (steps.type == "ordered") { %>
+									</ol>
+									<% } else { %>
+									</ul>
+									<% } %>
+								<% } %>
+							<% } %>
+						</div>
+						<% if (tutorialSteps.create.helpLinks) { %>
+						<div class="row content-details">
+							<h4><%= tutorialSteps.create.helpLinks.title %></h4>
+							<ul>
+							<% for (var i in tutorialSteps.create.helpLinks.details) { %>
+								<% var link = tutorialSteps.create.helpLinks.details[i] %>
+								<% if ((link.type) && (link.type == "web")) { %>
+								<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+								<% } else { %>								
+								<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>');" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+							   <% } %>	
+							<% } %>
+							</ul>
+						</div>
+						<% } %>
+					</div>
+					<% if (tutorialSteps.create.actions) { %>
+					<div class="small-2 medium-2 large-2 columns">
+					<% for (var i in tutorialSteps.create.actions.details) { %>
+					<% var link = tutorialSteps.create.actions.details[i] %>
+					<h4 class="tkaction"><a href="javascript:;" onclick="<%= link.method %>; openResource('<%= tutorialCommon.resourceToOpen %>');"> <%= link.name %> <img class="icon-image" src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathActionIcon %>" /></a></h4>
+					<% } %>					
+				    </div>
+					<% } %>
+		    	</div>
+		    	<div class="content" id="panel31">
+					<% if (tutorialSteps.prepare.actions) { %>
+		    		<div class="small-10 medium-10 large-10 columns divider">
+					<% } else { %>
+					<div class="small-12 medium-12 large-12 columns">
+					<% } %>
+						<div class="row content-details">
+						  	<h4><%= tutorialSteps.prepare.overview.heading %></h4>
+						    <% var sections = tutorialSteps.prepare.overview.sections %>
+						    <% for (var i in sections) { %>
+								<p> <%- sections[i].section %> </p>
+								<% if (sections[i].steps) { %>
+								<% var steps = sections[i].steps %>
+									<% if (steps.type == "ordered") { %>
+									<ol>
+									<% } else { %>
+									<ul>
+									<% } %>
+									<% for (var j in steps.details) { %>
+										<li> <%- steps.details[j].details %>
+										<% if (steps.details[j].substeps) { %>
+										<% var substeps = steps.details[j].substeps %>
+											<% if (substeps.type == "ordered") { %>
+											<ol>
+											<% } else { %>
+											<ul>
+											<% } %>
+												<% for (var k in substeps.details) { %>
+													<li> <%- substeps.details[k].details %></li>
+												<% } %>
+											<% if (substeps.type == "ordered") { %>
+											</ol>
+											<% } else { %>
+											</ul>
+											<% } %>
+										<% } %>
+										</li>
+									<% } %>
+									<% if (steps.type == "ordered") { %>
+									</ol>
+									<% } else { %>
+									</ul>
+									<% } %>
+								<% } %>
+							<% } %>
+						</div>
+						<% if (tutorialSteps.prepare.helpLinks) { %>
+						<div class="row content-details">
+							<h4><%= tutorialSteps.prepare.helpLinks.title %></h4>
+							<ul>
+							<% for (var i in tutorialSteps.prepare.helpLinks.details) { %>
+								<% var link = tutorialSteps.prepare.helpLinks.details[i] %>
+								<% if ((link.type) && (link.type == "web")) { %>
+								<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+								<% } else { %>								
+								<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>')" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+							   <% } %>	
+							<% } %>
+							</ul>
+						</div>
+						<% } %>	
+					</div>
+					<% if (tutorialSteps.prepare.actions) { %>
+					<div class="small-2 medium-2 large-2 columns">
+					<% for (var i in tutorialSteps.prepare.actions.details) { %>
+					<% var link = tutorialSteps.prepare.actions.details[i] %>
+					<h4 class="tkaction"><a href="javascript:;" onclick="<%= link.method %>;"> <%= link.name %> <img class="icon-image" src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathActionIcon %>" /></a></h4>						
+				    <% } %>					
+				    </div>
+					<% } %>
+		    	</div>
+		    	<div class="content" id="panel41">
+		    		<% if ((tutorialSteps.run.actions) || (tutorialSteps.run.exits)) { %>
+		    		<div class="small-10 medium-10 large-10 columns divider">
+					<% } else { %>
+					<div class="small-12 medium-12 large-12 columns">
+					<% } %>
+				    	<div class="row content-details">
+					      	<h4><%= tutorialSteps.run.overview.heading %></h4>
+					        <% var sections = tutorialSteps.run.overview.sections %>
+						    <% for (var i in sections) { %>
+								<p> <%- sections[i].section %> </p>
+								<% if (sections[i].steps) { %>
+								<% var steps = sections[i].steps %>
+									<% if (steps.type == "ordered") { %>
+									<ol>
+									<% } else { %>
+									<ul>
+									<% } %>
+									<% for (var j in steps.details) { %>
+										<li> <%- steps.details[j].details %>
+										<% if (steps.details[j].substeps) { %>
+										<% var substeps = steps.details[j].substeps %>
+											<% if (substeps.type == "ordered") { %>
+											<ol>
+											<% } else { %>
+											<ul>
+											<% } %>
+												<% for (var k in substeps.details) { %>
+													<li> <%- substeps.details[k].details %></li>
+												<% } %>
+											<% if (substeps.type == "ordered") { %>
+											</ol>
+											<% } else { %>
+											</ul>
+											<% } %>
+										<% } %>
+										</li>
+									<% } %>
+									<% if (steps.type == "ordered") { %>
+									</ol>
+									<% } else { %>
+									</ul>
+									<% } %>
+								<% } %>
+							<% } %>
+						</div>
+						<% if (tutorialSteps.run.helpLinks) { %>
+						<div class="row content-details"> 	
+							<h4><%= tutorialSteps.run.helpLinks.title %></h4>
+							<ul>
+							<% for (var i in tutorialSteps.run.helpLinks.details) { %>
+								<% var link = tutorialSteps.run.helpLinks.details[i] %>
+								<% if ((link.type) && (link.type == "web")) { %>
+								<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+								<% } else { %>								
+								<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>')" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+							   <% } %>	
+							<% } %>
+							</ul>
+						</div>
+						<% } %>	
+					</div>
+					<% if ((tutorialSteps.run.actions) || (tutorialSteps.run.exits) ) { %>
+					<div class="small-2 medium-2 large-2 columns">
+					<% if (tutorialSteps.run.actions) { %>
+					<% for (var i in tutorialSteps.run.actions.details) { %>
+					<% var link = tutorialSteps.run.actions.details[i] %>
+					<h4 class="tkaction"><a href="javascript:;" onclick="<%= link.method %>;"> <%= link.name %> <img class="icon-image" src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathActionIcon %>" /></a></h4>
+				    <% } %>
+					<% } %>
+					<% if ((tutorialSteps.run.actions) && (tutorialSteps.run.exits)) { %>
+					<hr />
+					<% } %>
+					<% if (tutorialSteps.run.exits) { %>
+					<% for (var i in tutorialSteps.run.exits.details) { %>
+					<% var link = tutorialSteps.run.exits.details[i] %>
+					<h4 class="tkaction"><a href="javascript:;" onclick="<%= link.method %>;" title="<%= link.description %>"> <%= link.name %> <img class="icon-image" src="<%= header.repoUrlProtocol %><%= header.repoUrlSite %><%= header.repoUrlFilepathExitIcon %>" /></a></h4>
+				    <% } %>
+					<% } %>
+				    </div>
+					<% } %>
+				</div>	
+			</div> <!-- tab-content -->
+		</div> <!-- columns -->
+	  </div> <!-- row -->

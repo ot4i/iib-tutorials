@@ -1,0 +1,47 @@
+{
+  "version":"0.5",
+  "description":"Tutorial Framework with Foundation5.",
+  "sitemap": 
+  {
+    "layout": false
+  },
+  "siteJsonTree": 
+  {
+    "layout": false
+  },
+  "description":"Tutorial Listing for Tutorial Framework.",
+"separatorRepoMetadataJSON":{},
+ 	"_comment":"Content from this URL https://github.com/ot4i/ot4i.github.io/blob/master/tutorials/en/repo_metadata.json",
+	"managerUrl":"http://ot4i.github.io/tutorials",
+	"managerVersion": "1.0",
+	"downloadableForLocalInstall":"https://github.com/ot4i/tutorials/releases/download/localInstall.zip",
+"separatorFrameworkListJSON":{},
+	"header":
+	{
+		"lang":"en-us",
+		"charset":"UTF-8",
+		"metaDescription":"IBM Integration Bus V10 Tutorial",
+		"metaAuthor":"IBM",
+		"keywords":"keywords",
+		"robots":"index,follow",
+		"source":"IBM Integration Bus V10 Tutorial",
+
+		"repoUrlProtocol":"http://",
+		"repoUrlSite":"ot4i.github.io",
+		
+		"repoUrlFilepathCss":"/iib-tutorials/css/main.css",
+		"repoUrlFilepathCssApp":"/iib-tutorials/css/app.css",
+		"repoUrlFilepathJs":"/iib-tutorials/js/main.js",
+		
+		"repoUrlFilepathFoundationModernizr":"/iib-tutorials/js/vendor/modernizr.js",
+		"repoUrlFilepathFoundationJquery":"/iib-tutorials/js/vendor/jquery.js",
+		"repoUrlFilepathFoundationJs":"/iib-tutorials/js/vendor/foundation.min.js",
+		
+		"repoUrlFilepathJson2":"/iib-tutorials/js/json2.js",
+		"repoUrlFilepathJs2java":"/iib-tutorials/js/js2java.js",
+		"repoUrlFilepathJs2javaSteps":"/iib-tutorials/js/js2java_steps.js",
+		"repoUrlFilepathActionIcon":"/iib-tutorials/images/icons/ibmdesign/back-right-previous_128-orange.png",
+		"repoUrlFilepathExitIcon":"/iib-tutorials/images/icons/ibmdesign/close-cancel-error_128-red.png",
+		"repoUrlFilepathClockIcon":"/iib-tutorials/images/icons/ibmdesign/clock-time_128.png"
+	}
+} 

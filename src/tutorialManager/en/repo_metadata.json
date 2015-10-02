@@ -289,7 +289,7 @@
 					"deployedResources": [
 					]
 				},
-								{
+				{
 					"name" : "Manage a set of records with IBM Integration Bus REST API services",
 					"version"	: "1.0",
 					"iibVersions"	: "10.*-11.*",

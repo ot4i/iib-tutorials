@@ -305,7 +305,7 @@
 					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
 					"editorResPaths": [
 						{
-							"id" : "MainService",
+							"id" : "CustomerDatabaseV1",
 							"editor" : "restapi",
 							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
 						}

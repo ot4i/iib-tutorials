@@ -467,19 +467,19 @@
 					"version"	: "1.0",
 					"iibVersions"	: "10.*-11.*",
 					"shortDesc" : "Learn how to use an IBM Integration Bus REST API service to manage a set of records.",
-					"detailsURL" : "http://ot4i.github.io/rest-api-tutorial/en/details.html",
-					"stepsURL" : "http://ot4i.github.io/rest-api-tutorial/en/steps.html",
-					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/1.0/CustomerDatabasePI_V1.zip",
-					"barFile" : "",
+					"detailsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/details.html",
+					"stepsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/steps.html",
+					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/V1/CustomerDatabasePI_V1.zip",
+					"barFile" : "<workspace>/BARfiles/CustomerDatabaseV1.bar",
 					"visible"	: "true",
-					"tags"	: "tcp;tcpip",
+					"tags"	: "rest api",
 					"isPattern"	: "false",
 					"isFavorite"	: "true",
-					"projects"	: "BARFiles:CustomerDatabaseJava:CustomerDatabaseV1",
+					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
 					"editorResPaths": [
 						{
-							"id" : "MainService",
-							"editor" : "restapi",
+							"id" : "CustomerDatabaseV1",
+							"editor" : "",
 							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
 						}
 					],

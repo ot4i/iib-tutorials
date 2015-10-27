@@ -491,7 +491,7 @@
 					]
 				},
 				{
-		            	"name"          : "Using a Mapping node to graphically access a Lookup table that is stored in the Global Cache",
+		            	"name"          : "Using a Mapping node to access a Lookup table that is stored in the Global Cache",
 		            	"version"	: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
 		            	"shortDesc"     : "Learn how to use a Mapping node to graphically access a Lookup table that is stored in the Global Cache by exploring this simple example.",

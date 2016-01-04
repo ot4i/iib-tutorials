@@ -513,6 +513,30 @@
 		            			],
 				"deployedResources" : [
 						]
+				},
+				{
+		        	"name"          : "Business transaction monitoring",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to monitor business transactions on IBM Integration Bus Version 10.0.0.3",
+		            	"detailsURL"    : "http://ot4i.github.io/btm-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/btm-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/btm-tutorial/releases/download/V1/BTM_RETAIL.zip",
+					"barFile" : "",
+					"visible"	: "true",
+					"tags"	: "btm",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BTM_RETAIL_APP:BTM_RETAIL_SHARED_LIBRARY",
+					"editorResPaths": [
+						{
+							"id" : "MainProcessOrderFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/BTM_RETAIL_APP/Main_Process_Order_Flow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+					]
 				}
 			]
 		}, 

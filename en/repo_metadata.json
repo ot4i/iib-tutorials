@@ -560,6 +560,14 @@
        			                	}
         		          	],
 					"deployedResources": [
+						{
+							"type": "application",
+							"path": "Salesforce_Retrieve"
+						},
+						{
+							"type": "library",
+							"path": "Salesforce_Schemas"
+						}
 				     	]
 				} 
 			]

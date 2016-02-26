@@ -42,13 +42,181 @@
 							]
 				},
 				{
+		            	"name"          : "Transformation using a Map in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to transform data using a Map in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-map-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-map-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-map-tutorial/releases/download/v1.0/TransformMAPPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Mapproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Map",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Map/Transformation_Map.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Map"
+							}
+						]
+				},				
+				{
+		            	"name"          : "Transformation using ESQL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Compute node to transform data using ESQL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-esql-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-esql-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-esql-tutorial/releases/download/v1.0/TransformESQLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_ESQLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;esql",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_ESQL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_ESQL/Transformation_ESQL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_ESQL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-java-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-java-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-java-tutorial/releases/download/v1.0/TransformJavaPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Javaproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Java:Transformation_JavaJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Java/Transformation_Java.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Java"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java (JAXB) in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java (JAXB) in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-javaJAXB-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-javaJAXB-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-javaJAXB-tutorial/releases/download/v1.0/TransformJAXBPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_JavaJAXBproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_JavaJAXB:Transformation_JavaJAXBJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_JavaJAXB/Transformation_JavaJAXB.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_JavaJAXB"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using XSL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use an XSL Transform node to transform data using XSL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-XSL-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-XSL-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-XSL-tutorial/releases/download/v1.0/TransformXSLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_XSLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;xsl",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_XSL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_XSL/Transformation_XSL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_XSL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using .NET in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a .NETCompute node to transform data using C# in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/transformation-dotnet-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/transformation-dotnet-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/transformation-dotnet-tutorial/releases/download/v1.0/TransformDOTNETPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_DotNetproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;.NET",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_DotNet:Transformation_DotNet_DotNET",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_DotNet/Transformation_DotNet.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_DotNet"
+							}
+						]
+				},				
+				{
 		            	"name"          : "Large messaging",
 		            	"version"		: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
 		            	"shortDesc"     : "Split a large input message into individual records, using Java transformation code, in a memory-efficient manner.",
 		            	"detailsURL"    : "http://ot4i.github.io/large-messaging-tutorial/en/details.html",
 		            	"stepsURL"      : "http://ot4i.github.io/large-messaging-tutorial/en/steps.html",
-		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1/LargeMessages.zip",
+		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1.1/LargeMessagingPI.zip",
 		            	"barFile"       : "<workspace>/BARfiles/LargeMessages.bar",
 		            	"visible"	: "true",
 		            	"tags"		: "java;transformation",
@@ -96,6 +264,35 @@
 							"path": "HTTPInputApplication"
 							}
 						]
+				},
+				{
+        				"name": "Receiving MQTT messages by subscribing to MQTT topics",
+        				"version": "1.0",
+        				"iibVersions": "10.*-11.*",
+        				"shortDesc": "Learn how to use the MQTTSubscribe node to receive messages from an MQTT server.",
+        				"barFile": "<workspace>/MQTTSubscribe/MQTTSubscribe.bar",
+        				"visible": "true",
+        				"tags": "service;http;soap;transformation",
+        				"isPattern": "false",
+        				"isFavorite": "true",
+         				"projects": "MQTTSubscribe",
+         				"editorResPaths": [
+           				{
+        					"id": "MQTTSubscribe",
+						"editor": "flow",
+						"wspath": "<workspace>/MQTTSubscribe/MQTTSubscribe.msgflow"
+			            	}
+					],
+					"deployedResources": [
+					{
+						"type": "application",
+						"path": "MQTTSubscribe"
+					}
+					],
+					"id": "MQTTSubscribe",
+					"detailsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/details.html",
+					"stepsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/steps.html",
+					"zipURL": "https://github.com/ot4i/mqtt-subscribe-tutorial/releases/download/v1.0/MQTTSubscribe.v1.0.PI.zip"
 				},
                         	{
                                 "name"          : "Modeling CSV data by using DFDL",
@@ -240,7 +437,131 @@
                                                   ],
                                 "deployedResources": [
                                                      ]
-				}
+				},
+				{
+				"name" : "Integration using TCPIP nodes",
+				"version"	: "1.0",
+				"iibVersions"	: "10.*-11.*",
+				"shortDesc" : "Learn how to use TCP/IP nodes for integration with external applications using TCPIP sockets. ",
+				"detailsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/details.html",
+				"stepsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/steps.html",
+				"zipURL" : "https://github.com/ot4i/tcpip-input-tutorial/releases/download/1.0/TCPIP_Project_Interchange.zip",
+				"barFile" : "",
+				"visible"	: "true",
+				"tags"	: "tcp;tcpip",
+				"isPattern"	: "false",
+				"isFavorite"	: "true",
+				"projects"	: "TCPIPServer:TCPIPClient:DataLibrary",
+				"editorResPaths": [
+					{
+						"id" : "MainFlow",
+						"editor" : "",
+						"wspath" : "<workspace>/TCPIPServer/TCPIPProvider.msgflow"
+					}
+				],
+				"deployedResources": [
+				]
+				},
+				{
+					"name" : "Manage a set of records with IBM Integration Bus REST API services",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "Learn how to use an IBM Integration Bus REST API service to manage a set of records.",
+					"detailsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/details.html",
+					"stepsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/steps.html",
+					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/V1/CustomerDatabasePI_V1.zip",
+					"barFile" : "<workspace>/BARfiles/CustomerDatabaseV1.bar",
+					"visible"	: "true",
+					"tags"	: "rest api",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
+					"editorResPaths": [
+						{
+							"id" : "CustomerDatabaseV1",
+							"editor" : "",
+							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
+						}
+					],
+			    	"deployedResources" : [
+						{
+							"type": "restapi",
+							"path": "CustomerDatabaseV1"
+						}
+					]
+				},
+				{
+		            	"name"          : "Using a Mapping node to access a Lookup table that is stored in the Global Cache",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to graphically access a Lookup table that is stored in the Global Cache by exploring this simple example.",
+				"detailsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/details.html",
+				"stepsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/mapping-cache-tutorial/releases/download/1.0/MappingCachePI.zip",
+				"barFile" 	: "",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map;cache",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "LookupTable_UsingMappingGlobalCache",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/LookupTable_UsingMappingGlobalCache/LookupCountyFullName.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+						]
+				},
+				{
+		        		"name"          : "Business transaction monitoring",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to monitor business transactions on IBM Integration Bus Version 10.0.0.3",
+		            		"detailsURL"    : "http://ot4i.github.io/btm-tutorial/en/details.html",
+		            		"stepsURL"      : "http://ot4i.github.io/btm-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/btm-tutorial/releases/download/V1/BTM_RETAIL.zip",
+					"barFile" : "",
+					"visible"	: "true",
+					"tags"	: "btm",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BTM_RETAIL_APP:BTM_RETAIL_SHARED_LIBRARY",
+					"editorResPaths": [
+						{
+							"id" : "MainProcessOrderFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/BTM_RETAIL_APP/Main_Process_Order_Flow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+					]
+				},
+				{
+			       	        "name"          : "Retrieving records from a Salesforce system",
+			                "version"	: "1.0",
+			                "iibVersions"	: "10.*-11.*",
+			           	"shortDesc"     : "Learn how to use the SalesforceRequest node to retrieve records from Salesforce.com",
+			           	"detailsURL"    : "http://smhdfdl.github.io/iib-salesforce-tutorial/en/details.html",
+			           	"stepsURL"      : "http://smhdfdl.github.io/iib-salesforce-tutorial/en/steps.html",
+			           	"zipURL"        : "https://github.com/smhdfdl/iib-salesforce-tutorial/releases/download/v1.0.0/iibsalesforce_PI_v1.zip",
+			           	"barFile"       : "",
+			           	"visible"	: "true",
+			           	"tags"		: "iib;salesforce",
+			           	"isPattern"	: "false",
+			           	"isFavorite"	: "true",
+			           	"projects"	: "Salesforce_Retrieve:Salesforce-Schemas",
+			       	        "editorResPaths": [
+           					{
+       		        	        		"id" : "MainFlow",
+       				                	"editor" : "",
+    			  	                	"wspath" : "<workspace>/Salesforce_Retrieve/Salesforce_Retrieve.msgflow"
+       			                	}
+        		          	],
+					"deployedResources": [
+				     	]
+				} 
 			]
 		}, 
 		{

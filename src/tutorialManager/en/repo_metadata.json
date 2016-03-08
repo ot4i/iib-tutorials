@@ -465,6 +465,46 @@
 					],
 			    		"deployedResources" : [
 					]
+				},
+				{
+		        	"name"          : "Callable Flows",
+		            	"version"	: "0.1",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to split flow processing using CallableFlow nodes on IBM Integration Bus Version 10.0.0.4",
+		            	"detailsURL"    : "http://ajpaton.github.io/callable-flows-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ajpaton.github.io/callable-flows-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ajpaton/callable-flows-tutorial/releases/download/V1/BTM_RETAIL.zip",
+					"barFile" : "<workspace>/CallableFlowBARFiles/callable_flows.bar",
+					"visible"	: "true",
+					"tags"	: "",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "CallableFlowBARFiles:CallableTimestamp:CallableTimestampAlternate:HTTPParentApplication:TestCallableFlows",
+					"editorResPaths": [
+						{
+							"id" : "TimestampMyJSON",
+							"editor" : "",
+							"wspath" : "<workspace>/HTTPParentApplication/TimestampMyJSON.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "HTTPParentApplication"
+							},
+							{
+							"type": "application",
+							"path": "CallableTimestamp"
+							},
+							{
+							"type": "application",
+							"path": "CallableTimestampAlternate"
+							},
+							{
+							"type": "application",
+							"path": "TestCallableFlows"
+							},
+					]
 				}
 			]
 		}, 

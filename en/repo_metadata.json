@@ -26,7 +26,7 @@
 			           	"tags"		: "iib;salesforce",
 			           	"isPattern"	: "false",
 			           	"isFavorite"	: "true",
-			           	"projects"	: "Salesforce_Retrieve:Salesforce_Schemas",
+			           	"projects"	: "Salesforce_Retrieve:Salesforce_Schemas:TestModeBarFiles",
 			       	        "editorResPaths": [
            					{
        		        	        		"id" : "MainFlow",

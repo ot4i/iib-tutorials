@@ -21,7 +21,7 @@
 			           	"detailsURL"    : "http://smhdfdl.github.io/iib-salesforce-tutorial/en/details.html",
 			           	"stepsURL"      : "http://smhdfdl.github.io/iib-salesforce-tutorial/en/steps.html",
 			           	"zipURL"        : "https://github.com/smhdfdl/iib-salesforce-tutorial/releases/download/v100/iibsalesforce_PI_v1.zip",
-			           	"barFile"       : "",
+			           	"barFile"       : "<workspace>/TestModeBarFiles/Salesforce_Retrieveproject.TestMode.bar",
 			           	"visible"	: "true",
 			           	"tags"		: "iib;salesforce",
 			           	"isPattern"	: "false",

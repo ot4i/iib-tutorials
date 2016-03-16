@@ -266,6 +266,42 @@
 						]
 				},
 				{
+		        	"name"          : "Callable Flows",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to split flow processing using CallableFlow nodes",
+		            	"detailsURL"    : "http://ot4i.github.io/callable-flows-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/callable-flows-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/callable-flows-tutorial/releases/download/v1.0/CallableFlowsPI.zip",
+					"barFile" : "<workspace>/CallableFlowBARFiles/callable_flows.bar",
+					"visible"	: "true",
+					"tags"	: "callableflows;map",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "CallableFlowBARFiles:CallableTimestamp:CallableTimestampAlternate:CallingParentApplication",
+					"editorResPaths": [
+						{
+							"id" : "TimestampMyJSON",
+							"editor" : "flow",
+							"wspath" : "<workspace>/CallingParentApplication/TimestampMyJSON.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "CallingParentApplication"
+							},
+							{
+							"type": "application",
+							"path": "CallableTimestamp"
+							},
+							{
+							"type": "application",
+							"path": "CallableTimestampAlternate"
+							}
+					]
+				},
+				{
         				"name": "Receiving MQTT messages by subscribing to MQTT topics",
         				"version": "1.0",
         				"iibVersions": "10.*-11.*",

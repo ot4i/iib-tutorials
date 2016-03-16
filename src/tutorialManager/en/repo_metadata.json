@@ -465,6 +465,30 @@
 					],
 			    		"deployedResources" : [
 					]
+				},
+				{
+		            	"name"          : "Using a Mapping node to graphically access a Lookup table that is stored in the Global Cache",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to graphically access a Lookup table that is stored in the Global Cache by exploring this simple example.",
+				"detailsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/details.html",
+				"stepsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/mapping-cache-tutorial/releases/download/1.0/MappingCachePI.zip",
+				"barFile" 	: "",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map;cache",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "LookupTable_UsingMappingGlobalCache",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/LookupTable_UsingMappingGlobalCache/LookupCountyFullName.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+						]
 				}
 			]
 		}, 

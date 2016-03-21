@@ -14,7 +14,7 @@
       <h4><%= tutorialCommon.name %></h4>
     </div>
     <div class="small-3 medium-3 large-3 columns"> 
-      <a href="javascript:;" onclick="openHelpSystem('<%= tutorialCommon.helpLink.link %>');" class="small right helplink"><%= tutorialCommon.helpLink.text %></a>
+      <!--a href="javascript:;" onclick="openHelpSystem('<%= tutorialCommon.helpLink.link %>');" class="small right helplink"><%= tutorialCommon.helpLink.text %></a-->
     </div>
   </div> 
   <hr />
@@ -33,7 +33,25 @@
         <% for (var i in sections) { %>
         <p> <%= sections[i].section %> </p>
       <% } %>
-      </div>
+      </div>	  
+		<!-- help links do not work in details page for GA 
+        <% if (tutorialDetails.helpLinks) { %>
+		<div class="row content-details">
+			<h4><%= tutorialDetails.helpLinks.title %></h4>
+			<ul>
+			<% for (var i in tutorialDetails.helpLinks.details) { %>
+				<% var link = tutorialDetails.helpLinks.details[i] %>
+				<% if ((link.type) && (link.type == "web")) { %>
+				<li> <a href="javascript:;" onclick="openExternalBrowser('<%= link.link %>')" title="<%= link.title %> <%= link.description %>"><%= link.description %></a> </li>
+				<% } else { %>								
+				<li> <a href="javascript:;" onclick="openHelpSystem('/<%= link.link %>');" title="<%= link.title %><%= link.description %>"><%= link.description %></a> </li>
+			   <% } %>	
+			<% } %>
+			</ul>
+		</div>
+		<% } %>		  
+        -->
+        
     </div><!-- End Columns -->
     <div class="small-offset-1 small-5 medium-offset-1 medium-5 large-offset-1 large-5 columns">
       <div class="row">
@@ -48,11 +66,11 @@
           </div>
           <div class="row" style="margin-left: 1rem; text-align: center;">
             <action>
-              <div class="small radius button" id="<%= content._common.buttonStartTutorial.idName %>" onclick="<%= content._common.buttonStartTutorial.method %>;"> <%= content._common.buttonStartTutorial.name %>
-            </div>
+              <button class="small radius button" tabindex="0" id="<%= content._common.buttonStartTutorial.idName %>" onclick="<%= content._common.buttonStartTutorial.method %>;"> <%= content._common.buttonStartTutorial.name %>
+            </button>
             </action>
-            <div class="small radius button" id="<%= content._common.buttonBackToGallery.idName %>" onclick="<%= content._common.buttonBackToGallery.method %>;"> <%= content._common.buttonBackToGallery.name %>
-			</div>
+            <button class="small radius button" tabindex="0" id="<%= content._common.buttonBackToGallery.idName %>" onclick="<%= content._common.buttonBackToGallery.method %>;"> <%= content._common.buttonBackToGallery.name %>
+			</button>
           </div>
         </div>
       </div>

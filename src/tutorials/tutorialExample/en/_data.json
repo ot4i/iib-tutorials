@@ -1,5 +1,5 @@
 {
-    "version": "0.5",
+    "version": "0.6",
     "pageContent": 
 	{
         "_comments": "JSON object that contains data for page labels, buttons, etc.",
@@ -18,6 +18,12 @@
                     "name": "Start Tutorial",
 					"method": "startTutorialFromDetailsScreen()",
 					"idName": "startTutorial"
+                },
+				"buttonViewDetails": 
+				{
+                    "name": "View Details",
+					"method": "viewDetails()",
+					"idName": "stepsViewDetails"	
                 }
             }
         }
@@ -75,48 +81,30 @@
                         "section": "In IBM Integration Bus, an application is a container for all the resources that are required to create a solution. An application can contain IBM Integration Bus resources, such as flows, message definitions, libraries, and JAR files. An application is used to hold the message flow in this tutorial.  If you have a WSDL document that describes a SOAP/HTTP interface you might consider using an integration service instead. See the Integration services (SOAP/HTTP inputs) tutorial for more details."
                     }
                 ]
-            }
+            },
+			"helpLinks": 
+			{
+				"_helpLinksComment": "Helplinks that have a type:web attribute are rendered as web links. Otherwise, links are assumed to be to embedded Help topics in the Knowledge Center.",
+				"title": "Find out more",
+				"details": 
+				[
+					{
+						"title": "Knowledge Center link to ",
+						"description": "Developing integration solutions by using applications",
+						"link": "com.ibm.etools.mft.doc/bi12002_.htm",
+						"type": "help"
+					},
+					{
+						"title": "GitHub link to ",
+						"description": "DFDL Schemas",
+						"link": "http://github.com/DFDLSchemas",
+						"type": "web"
+					}
+				]
+			}
         },
         "pageSteps": 
 		{
-            "concept": 
-			{
-                "overview": 
-				{
-                    "name": "Overview",
-                    "heading": "Overview",
-                    "_overviewComment": "A short description of what this tutorial does, and what the user will do to run the tutorial.",
-                    "sections": 
-					[
-                        {
-                            "section": "This tutorial demonstrates a simple message flow that receives JSON data over HTTP. The flow transforms the input JSON structure into a different output JSON structure using a graphical data mapping node and sends this back to the HTTP request."
-                        },
-                        {
-                            "section": "You will import the message flow to your Integration Toolkit workspace, deploy it to your default integration server, and invoke the message flow by using the Flow exerciser."
-                        }
-                    ]
-                },
-                "helpLinks": 
-				{
-                    "_helpLinksComment": "Helplinks that have a type:web attribute are rendered as web links. Otherwise, links are assumed to be to embedded Help topics in the Knowledge Center.",
-                    "title": "Find out more",
-                    "details": 
-					[
-                        {
-                            "title": "Knowledge Center link to ",
-                            "description": "Developing integration solutions by using applications",
-                            "link": "com.ibm.etools.mft.doc/bi12002_.htm",
-                            "type": "help"
-                        },
-                        {
-                            "title": "GitHub link to ",
-                            "description": "DFDL Schemas",
-                            "link": "http://github.com/DFDLSchemas",
-                            "type": "web"
-                        }
-                    ]
-                }
-            },
             "create": 
 			{
                 "overview": 

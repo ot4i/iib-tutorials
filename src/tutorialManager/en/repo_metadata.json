@@ -42,13 +42,181 @@
 							]
 				},
 				{
+		            	"name"          : "Transformation using a Map in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to transform data using a Map in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationMap/TransformationMap/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationMap/TransformationMap/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationMap/releases/download/V1.0/TransformationMapPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Mapproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Map",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Map/Transformation_Map.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Map"
+							}
+						]
+				},				
+				{
+		            	"name"          : "Transformation using ESQL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Compute node to transform data using ESQL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationESQL/TransformationESQL/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationESQL/TransformationESQL/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationESQL/releases/download/V1.0/TransformationESQLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_ESQLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;esql",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_ESQL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_ESQL/Transformation_ESQL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_ESQL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationJava/TransformationJava/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationJava/TransformationJava/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationJava/releases/download/V1.0/TransformationJavaPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_Javaproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_Java:Transformation_JavaJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_Java/Transformation_Java.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_Java"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using Java (JAXB) in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a JavaCompute node to transform data using Java (JAXB) in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationJavaJAXB/TransformationJavaJAXB/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationJavaJAXB/TransformationJavaJAXB/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationJavaJAXB/releases/download/V1.0/TransformationJavaJAXBPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_JavaJAXBproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;java",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_JavaJAXB:Transformation_JavaJAXBJava",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_JavaJAXB/Transformation_JavaJAXB.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_JavaJAXB"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using XSL in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use an XSL Transform node to transform data using XSL in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationXSL/TransformationXSL/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationXSL/TransformationXSL/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationXSL/releases/download/V1.0/TransformationXSLPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_XSLproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;xsl",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_XSL",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_XSL/Transformation_XSL.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_XSL"
+							}
+						]
+				},
+				{
+		            	"name"          : "Transformation using .NET in a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a .NETCompute node to transform data using C# in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://bthomps.github.io/tutorialTransformationDotNet/TransformationDotNet/en/details.html",
+		            	"stepsURL"      : "http://bthomps.github.io/tutorialTransformationDotNet/TransformationDotNet/en/steps.html",
+		            	"zipURL"        : "https://github.com/bthomps/tutorialTransformationDotNet/releases/download/V1.0/TransformationDotNetPI.zip",
+		            	"barFile"       : "<workspace>/TestModeBarFiles/Transformation_DotNetproject.TestMode.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;.NET",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "Transformation_DotNet:Transformation_DotNet_DotNET",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/Transformation_DotNet/Transformation_DotNet.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Transformation_DotNet"
+							}
+						]
+				},				
+				{
 		            	"name"          : "Large messaging",
 		            	"version"		: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
 		            	"shortDesc"     : "Split a large input message into individual records, using Java transformation code, in a memory-efficient manner.",
 		            	"detailsURL"    : "http://ot4i.github.io/large-messaging-tutorial/en/details.html",
 		            	"stepsURL"      : "http://ot4i.github.io/large-messaging-tutorial/en/steps.html",
-		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1/LargeMessages.zip",
+		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1.1/LargeMessagingPI.zip",
 		            	"barFile"       : "<workspace>/BARfiles/LargeMessages.bar",
 		            	"visible"	: "true",
 		            	"tags"		: "java;transformation",
@@ -96,6 +264,207 @@
 							"path": "HTTPInputApplication"
 							}
 						]
+				},
+				{
+        				"name": "Subscribing to receive MQTT events",
+        				"version": "1.0",
+        				"iibVersions": "10.*-11.*",
+        				"shortDesc": "Learn how to use the MQTT Subscribe node to receive data from an MQTT broker.",
+        				"barFile": "<workspace>/MQTTSubscribe/MQTTSubscribe.bar",
+        				"visible": "true",
+        				"tags": "service;http;soap;transformation",
+        				"isPattern": "false",
+        				"isFavorite": "true",
+         				"projects": "MQTTSubscribe",
+         				"editorResPaths": [
+           				{
+        					"id": "MQTTSubscribe",
+						"editor": "flow",
+						"wspath": "<workspace>/MQTTSubscribe/MQTTSubscribe.msgflow"
+			            	}
+					],
+					"deployedResources": [
+					{
+						"type": "application",
+						"path": "MQTTSubscribe"
+					}
+					],
+					"id": "MQTTSubscribe",
+					"detailsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/details.html",
+					"stepsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/steps.html",
+					"zipURL": "https://github.com/ot4i/mqtt-subscribe-tutorial/releases/download/v1.0/MQTTSubscribe.v1.0.PI.zip"
+				},
+                        	{
+                                "name"          : "Modeling CSV data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model CSV data using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-csv-tutorial/releases/download/v1.0.0/dfdlcsv_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;csv",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "CommaSeparatedValues",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainDataFile",
+                                                                "editor" : "text",
+                                                                "wspath" : "<workspace>/CommaSeparatedValues/simpleCSV.txt"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                        	{
+                                "name"          : "Modeling COBOL data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model COBOL data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-cobol-tutorial/releases/download/v1.0.0/dfdlcobol_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;cobol",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "COBOL-Purchases",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainCopybook",
+                                                                "editor" : "lpex",
+                                                                "wspath" : "<workspace>/COBOL-Purchases/PurchaseData.cpy"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                        	{
+                                "name"          : "Modeling EDIFACT data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model EDIFACT data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-edifact-tutorial/releases/download/v1.0.0/dfdledifact_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;edifact",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "EDIFACT-D03B:EDIFACT-Common",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainSchema",
+                                                                "editor" : "dfdl",
+                                                                "wspath" : "<workspace>/EDIFACT-D03B/EDIFACT-SupplyChain-Messages-D.03B.xsd"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+                        	}, 
+                                {
+                                "name"          : "Modeling ISO 8583 data by using DFDL",
+                                "version"	: "1.0",
+                                "iibVersions"	: "10.*-11.*",
+                                "shortDesc"     : "Learn how to model ISO 8583 data by using Data Format Description Language (DFDL)",
+                                "detailsURL"    : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/details.html",
+                                "stepsURL"      : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/steps.html",
+                                "zipURL"        : "https://github.com/ot4i/dfdl-iso8583-tutorial/releases/download/v1.0.0/dfdliso8583_PI_v1.zip",
+                                "barFile"       : "",
+                                "visible"	: "true",
+                                "tags"		: "dfdl;iso8583",
+                                "isPattern"	: "false",
+                                "isFavorite"	: "true",
+                                "projects"	: "ISO8583",
+                                "editorResPaths": [
+                                                        {
+                                                                "id" : "MainSchema",
+                                                                "editor" : "dfdl",
+                                                                "wspath" : "<workspace>/ISO8583/1987/ISO8583_1987.xsd"
+                                                        }
+                                                  ],
+                                "deployedResources": [
+                                                     ]
+				},
+				{
+				"name" : "Integration using TCPIP nodes",
+				"version"	: "1.0",
+				"iibVersions"	: "10.*-11.*",
+				"shortDesc" : "Learn how to use TCP/IP nodes for integration with external applications using TCPIP sockets. ",
+				"detailsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/details.html",
+				"stepsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/steps.html",
+				"zipURL" : "https://github.com/ot4i/tcpip-input-tutorial/releases/download/1.0/TCPIP_Project_Interchange.zip",
+				"barFile" : "",
+				"visible"	: "true",
+				"tags"	: "tcp;tcpip",
+				"isPattern"	: "false",
+				"isFavorite"	: "true",
+				"projects"	: "TCPIPServer:TCPIPClient:DataLibrary",
+				"editorResPaths": [
+					{
+						"id" : "MainFlow",
+						"editor" : "",
+						"wspath" : "<workspace>/TCPIPServer/TCPIPProvider.msgflow"
+					}
+				],
+				"deployedResources": [
+				]
+				},
+				{
+					"name" : "Manage a set of records with IBM Integration Bus REST API services",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "Learn how to use an IBM Integration Bus REST API service to manage a set of records.",
+					"detailsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/details.html",
+					"stepsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/steps.html",
+					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/V1/CustomerDatabasePI_V1.zip",
+					"barFile" : "<workspace>/BARfiles/CustomerDatabaseV1.bar",
+					"visible"	: "true",
+					"tags"	: "rest api",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
+					"editorResPaths": [
+						{
+							"id" : "CustomerDatabaseV1",
+							"editor" : "",
+							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
+						}
+					],
+			    	"deployedResources" : [
+						{
+							"type": "restapi",
+							"path": "CustomerDatabaseV1"
+						}
+					]
+				},
+				{
+		        	"name"          : "Business transaction monitoring",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to monitor business transactions on IBM Integration Bus Version 10.0.0.3",
+		            	"detailsURL"    : "http://ot4i.github.io/btm-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/btm-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/btm-tutorial/releases/download/V1/BTM_RETAIL.zip",
+					"barFile" : "",
+					"visible"	: "true",
+					"tags"	: "btm",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BTM_RETAIL_APP:BTM_RETAIL_SHARED_LIBRARY",
+					"editorResPaths": [
+						{
+							"id" : "MainProcessOrderFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/BTM_RETAIL_APP/Main_Process_Order_Flow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+					]
 				}
 			]
 		}, 

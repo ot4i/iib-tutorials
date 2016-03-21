@@ -238,6 +238,38 @@
 						]
 				},				
 				{
+			       	        "name"          : "Retrieving records from a Salesforce system",
+			                "version"	: "1.0",
+			                "iibVersions"	: "10.*-11.*",
+			           	"shortDesc"     : "Learn how to use the SalesforceRequest node to retrieve records from Salesforce.com (requires IBM Integration Bus v10 fixpack 4 or later).",
+			           	"detailsURL"    : "http://ot4i.github.io/salesforce-tutorial/en/details.html",
+			           	"stepsURL"      : "http://ot4i.github.io/salesforce-tutorial/en/steps.html",
+			           	"zipURL"        : "https://github.com/ot4i/salesforce-tutorial/releases/download/v100/iibsalesforce_PI_v1.zip",
+			           	"barFile"       : "<workspace>/TestModeBarFiles/Salesforce_Retrieveproject.TestMode.bar",
+			           	"visible"	: "true",
+			           	"tags"		: "iib;salesforce",
+			           	"isPattern"	: "false",
+			           	"isFavorite"	: "true",
+			           	"projects"	: "Salesforce_Retrieve:Salesforce_Schemas",
+			       	        "editorResPaths": [
+           					{
+       		        	        		"id" : "MainFlow",
+       				                	"editor" : "",
+    			  	                	"wspath" : "<workspace>/Salesforce_Retrieve/Salesforce_Retrieve.msgflow"
+       			                	}
+        		          	],
+					"deployedResources": [
+						{
+							"type": "application",
+							"path": "Salesforce_Retrieve"
+						},
+						{
+							"type": "library",
+							"path": "Salesforce_Schemas"
+						}
+				     	]
+				},
+				{
 		        	"name"          : "Callable Flows",
 		            	"version"	: "1.0",
 		            	"iibVersions"	: "10.*-11.*",

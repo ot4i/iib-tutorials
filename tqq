@@ -1,0 +1,220 @@
+[33mcommit f4968c98cbc3b760de182bdffd56a7d7f0f7e61f[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Wed Mar 16 08:16:11 2016 +0000
+
+    Remove TestModeBarFiles from project list
+    
+    Tutorial framework does not handle deletions of individual files from projects
+
+[33mcommit 6d951415980751ddddeed2fc814ba3ea96174957[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Mon Mar 14 09:11:57 2016 +0000
+
+    Update repo_metadata.json
+
+[33mcommit 3bf1f97c70871b3f8e3073268b64b0cd1d983b03[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Mon Mar 14 08:57:40 2016 +0000
+
+    Add bar file to repo_metadata
+
+[33mcommit b3e6f1a45a10ae79cb9737b401e5bd8a2a0d141f[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Wed Mar 2 08:47:28 2016 +0000
+
+    Correct Salesforce library name
+
+[33mcommit 778cf5d16e7639bb5ceca090507e543c19b2a067[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Fri Feb 26 13:29:10 2016 +0000
+
+    Update deployed resources
+
+[33mcommit 0474fcc5e95e679db43f4516b88479e11d7be3b7[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Fri Feb 26 12:46:05 2016 +0000
+
+    Correct release path
+
+[33mcommit 5e53e3131ee2257b2a3693843f0fd29939df1268[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Fri Feb 26 11:33:51 2016 +0000
+
+    Add salesforce
+
+[33mcommit a0c939501685a8022f7fc6cb3769f85a64755030[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Thu Apr 30 12:49:09 2015 +0100
+
+    Update repo_metadata for next two DFDL tutorials
+
+[33mcommit 4a5a8582d27e7d7a05ad93405edcefe4d2144315[m
+Author: Steve Hanson <smh@uk.ibm.com>
+Date:   Wed Apr 1 12:05:21 2015 +0100
+
+    Update repo_metadata for first four DFDL tutorials
+
+[33mcommit 6f8f5c0fd2ce79e7fb2d646863e12bc7b2933adf[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Thu Mar 19 18:20:50 2015 +0000
+
+    Add support for nested ol lists 1.a.i.
+
+[33mcommit da91c1263c25195dcfc00693ce3924f7b8390b35[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Tue Mar 17 19:17:45 2015 +0000
+
+    New structure for gh-pages
+
+[33mcommit 9e8f2c8a05a105faba12c7162157df5bb719e654[m
+Merge: b822661 88a7e29
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Mon Mar 16 22:01:35 2015 +0000
+
+    Merge branch 'gh-pages' of https://github.com/ot4i/iib-tutorials into gh-pages
+
+[33mcommit b822661c4f13ef4c16a1b7168f852a4c27f94e8d[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Mon Mar 16 22:00:40 2015 +0000
+
+    Move location of HTTP Input and Integration Services tutorials
+
+[33mcommit 88a7e298acede1e6050a42ee3f473c1557ad8f57[m
+Merge: e781ca9 c65e146
+Author: Cathy Young <cathyyoung@users.noreply.github.com>
+Date:   Mon Mar 16 21:23:17 2015 +0000
+
+    Merge pull request #7 from ot4i/master
+    
+    Move location of Large messaging
+
+[33mcommit c65e1462d06d6fbc9d0f5801fc7de50aaa9aa0ac[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Mon Mar 16 21:21:35 2015 +0000
+
+    Move location of Large messaging
+
+[33mcommit e781ca97eb6df77db0c4f1a7a30241ddc663fbba[m
+Merge: ac91223 80d1d66
+Author: Cathy Young <cathyyoung@users.noreply.github.com>
+Date:   Wed Mar 11 17:20:50 2015 +0000
+
+    Merge pull request #5 from ot4i/master
+    
+    Min-width for buttons and expand height of the tutorial selector
+
+[33mcommit 80d1d666a2c90ea19a80c21038316eb72f3d25b8[m
+Merge: 6932209 fec2068
+Author: Cathy Young <cathyyoung@users.noreply.github.com>
+Date:   Wed Mar 11 16:50:56 2015 +0000
+
+    Merge pull request #4 from cathyyoung/master
+    
+    Min-width for buttons and expand height of the tutorial selector
+
+[33mcommit fec2068125706ce16136bcb1f66a2d8f86e9d5e5[m
+Merge: 4bb0f58 2cfa757
+Author: Cathy Young <cathyyoung@users.noreply.github.com>
+Date:   Wed Mar 11 16:48:14 2015 +0000
+
+    Merge pull request #2 from cathyyoung/gh-pages
+    
+    Min-width for buttons and expand height of the tutorial selector
+
+[33mcommit 2cfa757734cc127488922c987d3c7b230d7fda85[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Wed Mar 11 16:46:07 2015 +0000
+
+    Min-width for buttons and expand height of the tutorial selector
+
+[33mcommit f2d4c44f0d650d95c0c846b36c2682ff6923a748[m
+Merge: ac91223 4bb0f58
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Wed Mar 11 16:25:12 2015 +0000
+
+    Merge branch 'master' into gh-pages
+
+[33mcommit 4bb0f5863b2cb2c90c242deca387e4cdabdd942e[m
+Merge: 7c25bee ac91223
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Wed Mar 11 16:19:39 2015 +0000
+
+    Merge remote-tracking branch 'origin/gh-pages'
+    
+    Conflicts:
+    	css/main.css
+
+[33mcommit 7c25bee4b4fdbfbf81e7b1dc32a88a6f441e64eb[m
+Author: cathyyoung <youngcat@uk.ibm.com>
+Date:   Wed Mar 11 16:10:04 2015 +0000
+
+    Min-width for category tabs and buttons
+
+[33mcommit ac912238caf73a0e78cc04a93829830a1ecf6e0b[m
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 18:42:12 2015 -0400
+
+    Rollback
+
+[33mcommit af01ad463d9151529b4a967d5e8f969b59f32272[m
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 18:36:31 2015 -0400
+
+    Update main.css
+
+[33mcommit 3dc4fecbdce3fced5c9b512b605a49555381e466[m
+Merge: 274f437 6932209
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 14:18:42 2015 -0400
+
+    Merge pull request #3 from ot4i/master
+    
+    removed accidental text
+
+[33mcommit 6932209b09132042938585248cc2bb39af95d0ba[m
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 14:17:46 2015 -0400
+
+    removed accidental text
+
+[33mcommit 274f43757089f470d206fb926ae8fe25339764bb[m
+Merge: 0d5fa37 967b137
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 14:16:08 2015 -0400
+
+    Merge pull request #2 from ot4i/master
+    
+    merge master with gh-pages: latest changes
+
+[33mcommit 967b137ca889a4d060f7e67e1944e130cc887a26[m
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 14:14:31 2015 -0400
+
+    fix html references to JS and images
+
+[33mcommit d61163cb3f5511bf44fc47b17bfb350e854ab430[m
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 14:11:08 2015 -0400
+
+    Move TutorialManager.html and related JS, css and an image
+
+[33mcommit 59cbf854ec766b880a6257d123780252981b5fea[m
+Merge: 10b4943 0d5fa37
+Author: ekharlamov <kharlamov.eugene@gmail.com>
+Date:   Tue Mar 10 11:31:52 2015 -0400
+
+    Merge pull request #1 from ot4i/gh-pages
+    
+    Copy repo_metadata.json to master
+
+[33mcommit 0d5fa37734c1b81667222b8f014a0b7076571c2e[m
+Author: hosie <hosie@users.noreply.github.com>
+Date:   Tue Mar 10 13:22:09 2015 +0000
+
+    Copy repo_metadata.json from ot4i.github.io
+
+[33mcommit 10b4943649b5376f3f5c9649937200e249e4d792[m
+Author: hosie <hosie@users.noreply.github.com>
+Date:   Tue Mar 10 13:20:05 2015 +0000
+
+    Initial commit

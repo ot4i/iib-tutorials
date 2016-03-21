@@ -8,15 +8,19 @@ select#styledSelect_Tool_Capabilities,select#styledSelect_Scenarios{height:200px
 ul#tutorialCategories li a{padding-left:0;padding-right:0; cursor:default;}
 div#viewDetails,div#startTutorial{min-width:60px;padding:5px}
 ul#tutorialCategories li#tabCapabilities {float:none;width:100% !important; margin:0 }
+div#stepsViewDetails { margin: 0 0 0 10px; position: relative; top: -3px;}
+h4.title { margin-bottom: 0; }
 
 ol ol { list-style: lower-alpha;}
 ol ol ol { list-style: lower-roman;}
 
-.library, .project, .application, .uicontrol { font-weight: bold; }
+.library, .project, .application, .uicontrol, .msgflow, .resource { font-weight: bold; }
 .filepath { font-family: monospace; }
 .cmdname { font-weight: bold; font-family: monospace; }
-.option { font-family: monospace; }
+.option, .property { font-family: monospace; }
+.view, .perspective { font-weight: bold; }
 .kwd { font-weight: bold; }
+.icon { font-style : italic;}
 .varname { font-style : italic;}
 .parmname { font-weight: bold; font-family: monospace; white-space: nowrap; }
 .code { font-family: monospace; }

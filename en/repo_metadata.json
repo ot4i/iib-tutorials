@@ -42,6 +42,34 @@
 							]
 				},
 				{
+					"name" : "Manage a set of records with IBM Integration Bus REST API services",
+					"version"	: "1.0",
+					"iibVersions"	: "10.*-11.*",
+					"shortDesc" : "Learn how to use an IBM Integration Bus REST API service to manage a set of records.",
+					"detailsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/details.html",
+					"stepsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/steps.html",
+					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/V1/CustomerDatabasePI_V1.zip",
+					"barFile" : "<workspace>/BARfiles/CustomerDatabaseV1.bar",
+					"visible"	: "true",
+					"tags"	: "rest api",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
+					"editorResPaths": [
+						{
+							"id" : "CustomerDatabaseV1",
+							"editor" : "",
+							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
+						}
+					],
+			    	"deployedResources" : [
+						{
+							"type": "restapi",
+							"path": "CustomerDatabaseV1"
+						}
+					]
+				},
+				{
 		            	"name"          : "Transformation using a Map in a message flow",
 		            	"version"	: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
@@ -210,66 +238,10 @@
 						]
 				},				
 				{
-		            	"name"          : "Large messaging",
-		            	"version"		: "1.0",
-		            	"iibVersions"	: "10.*-11.*",
-		            	"shortDesc"     : "Split a large input message into individual records, using Java transformation code, in a memory-efficient manner.",
-		            	"detailsURL"    : "http://ot4i.github.io/large-messaging-tutorial/en/details.html",
-		            	"stepsURL"      : "http://ot4i.github.io/large-messaging-tutorial/en/steps.html",
-		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1.1/LargeMessagingPI.zip",
-		            	"barFile"       : "<workspace>/BARfiles/LargeMessages.bar",
-		            	"visible"	: "true",
-		            	"tags"		: "java;transformation",
-		            	"isPattern"	: "false",
-		            	"isFavorite"	: "true",
-		            	"projects"	: "LargeMessages:LargeMessagesJava:BARfiles",
-		            	"editorResPaths"   : [
-		            				{
-		            				"id" : "MainFlow",
-		            				"editor" : "flow",
-		            			  	"wspath" : "<workspace>/LargeMessages/LargeMessages.msgflow"
-		            				}
-		            			],
-				"deployedResources" : [
-							{
-							"type": "application",
-							"path": "LargeMessages"
-							}
-						]
-				},
-				{
-		        	"name"          : "HTTP Input to drive a message flow",
-		            	"version"	: "1.0",
-		            	"iibVersions"	: "10.*-11.*",
-		            	"shortDesc"     : "Learn how to use an HTTP Input node to parse JSON data in an IBM Integration Bus message flow by exploring this simple example.",
-		            	"detailsURL"    : "http://ot4i.github.io/http-input-tutorial/en/details.html",
-		            	"stepsURL"      : "http://ot4i.github.io/http-input-tutorial/en/steps.html",
-		            	"zipURL"        : "https://github.com/ot4i/http-input-tutorial/releases/download/V1/PI_HTTPInputApplication.zip",
-		            	"barFile"       : "<workspace>/HTTPInputApplication/HTTPInputApplication.bar",
-		            	"visible"	: "true",
-		            	"tags"		: "HTTP;transformation",
-		            	"isPattern"	: "false",
-		            	"isFavorite"	: "true",
-		            	"projects"	: "HTTPInputApplication",
-		        	 "editorResPaths"   : [
-		            				{
-		            				"id" : "MainFlow",
-		            				"editor" : "flow",
-		            			  	"wspath" : "<workspace>/HTTPInputApplication/HTTPInputMessageFlow.msgflow"
-		            			}
-		            		],
-				"deployedResources" : [
-							{
-							"type": "application",
-							"path": "HTTPInputApplication"
-							}
-						]
-				},
-				{
 		        	"name"          : "Callable Flows",
 		            	"version"	: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
-		            	"shortDesc"     : "Learn how to split flow processing using CallableFlow nodes",
+		            	"shortDesc"     : "Learn how to split flow processing using CallableFlow nodes (requires IBM Integration Bus v10 fixpack 4 or later).",
 		            	"detailsURL"    : "http://ot4i.github.io/callable-flows-tutorial/en/details.html",
 		            	"stepsURL"      : "http://ot4i.github.io/callable-flows-tutorial/en/steps.html",
 				"zipURL" 	: "https://github.com/ot4i/callable-flows-tutorial/releases/download/v1.0/CallableFlowsPI.zip",
@@ -302,6 +274,54 @@
 					]
 				},
 				{
+		        	"name"          : "Business transaction monitoring",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to monitor business transactions across flows (requires IBM Integration Bus v10 fixpack 3 or later).",
+		            	"detailsURL"    : "http://ot4i.github.io/btm-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/btm-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/btm-tutorial/releases/download/V1/BTM_RETAIL.zip",
+					"barFile" : "",
+					"visible"	: "true",
+					"tags"	: "btm",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "BTM_RETAIL_APP:BTM_RETAIL_SHARED_LIBRARY",
+					"editorResPaths": [
+						{
+							"id" : "MainProcessOrderFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/BTM_RETAIL_APP/Main_Process_Order_Flow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+					]
+				},
+				{
+		            	"name"          : "Using a Mapping node to access a Lookup table that is stored in the Global Cache",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use a Mapping node to graphically access a Lookup table stored in the Global Cache (requires IBM Integration Bus v10 fixpack 2 or later).",
+				"detailsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/details.html",
+				"stepsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/steps.html",
+				"zipURL" 	: "https://github.com/ot4i/mapping-cache-tutorial/releases/download/1.0/MappingCachePI.zip",
+				"barFile" 	: "",
+		            	"visible"	: "true",
+		            	"tags"		: "transformation;map;cache",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "LookupTable_UsingMappingGlobalCache",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/LookupTable_UsingMappingGlobalCache/LookupCountyFullName.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+						]
+				},
+				{
         				"name": "Receiving MQTT messages by subscribing to MQTT topics",
         				"version": "1.0",
         				"iibVersions": "10.*-11.*",
@@ -330,11 +350,91 @@
 					"stepsURL": "http://ot4i.github.io/mqtt-subscribe-tutorial/en/steps.html",
 					"zipURL": "https://github.com/ot4i/mqtt-subscribe-tutorial/releases/download/v1.0/MQTTSubscribe.v1.0.PI.zip"
 				},
+				{
+		        	"name"          : "HTTP Input to drive a message flow",
+		            	"version"	: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Learn how to use an HTTP Input node to parse JSON data in an IBM Integration Bus message flow by exploring this simple example.",
+		            	"detailsURL"    : "http://ot4i.github.io/http-input-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/http-input-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/http-input-tutorial/releases/download/V1/PI_HTTPInputApplication.zip",
+		            	"barFile"       : "<workspace>/HTTPInputApplication/HTTPInputApplication.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "HTTP;transformation",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "HTTPInputApplication",
+		        	 "editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/HTTPInputApplication/HTTPInputMessageFlow.msgflow"
+		            			}
+		            		],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "HTTPInputApplication"
+							}
+						]
+				},
+				{
+				"name" : "Integration using TCPIP nodes",
+				"version"	: "1.0",
+				"iibVersions"	: "10.*-11.*",
+				"shortDesc" : "Learn how to use TCP/IP nodes for integration with external applications using TCPIP sockets.",
+				"detailsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/details.html",
+				"stepsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/steps.html",
+				"zipURL" : "https://github.com/ot4i/tcpip-input-tutorial/releases/download/1.0/TCPIP_Project_Interchange.zip",
+				"barFile" : "",
+				"visible"	: "true",
+				"tags"	: "tcp;tcpip",
+				"isPattern"	: "false",
+				"isFavorite"	: "true",
+				"projects"	: "TCPIPServer:TCPIPClient:DataLibrary",
+				"editorResPaths": [
+					{
+						"id" : "MainFlow",
+						"editor" : "",
+						"wspath" : "<workspace>/TCPIPServer/TCPIPProvider.msgflow"
+					}
+				],
+				"deployedResources": [
+				]
+				},
+				{
+		            	"name"          : "Large message splitting",
+		            	"version"		: "1.0",
+		            	"iibVersions"	: "10.*-11.*",
+		            	"shortDesc"     : "Split a large input message into individual records, using Java transformation code, in a memory-efficient manner.",
+		            	"detailsURL"    : "http://ot4i.github.io/large-messaging-tutorial/en/details.html",
+		            	"stepsURL"      : "http://ot4i.github.io/large-messaging-tutorial/en/steps.html",
+		            	"zipURL"        : "https://github.com/ot4i/large-messaging-tutorial/releases/download/V1.1/LargeMessagingPI.zip",
+		            	"barFile"       : "<workspace>/BARfiles/LargeMessages.bar",
+		            	"visible"	: "true",
+		            	"tags"		: "java;transformation",
+		            	"isPattern"	: "false",
+		            	"isFavorite"	: "true",
+		            	"projects"	: "LargeMessages:LargeMessagesJava:BARfiles",
+		            	"editorResPaths"   : [
+		            				{
+		            				"id" : "MainFlow",
+		            				"editor" : "flow",
+		            			  	"wspath" : "<workspace>/LargeMessages/LargeMessages.msgflow"
+		            				}
+		            			],
+				"deployedResources" : [
+							{
+							"type": "application",
+							"path": "LargeMessages"
+							}
+						]
+				},
                         	{
                                 "name"          : "Modeling CSV data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-                                "shortDesc"     : "Learn how to model CSV data using Data Format Description Language (DFDL)",
+                                "shortDesc"     : "Learn how to model CSV data using Data Format Description Language (DFDL).",
                                 "detailsURL"    : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/details.html",
                                 "stepsURL"      : "http://ot4i.github.io/dfdl-csv-tutorial/dfdlcsv/en/steps.html",
                                 "zipURL"        : "https://github.com/ot4i/dfdl-csv-tutorial/releases/download/v1.0.0/dfdlcsv_PI_v1.zip",
@@ -358,7 +458,7 @@
                                 "name"          : "Modeling COBOL data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-                                "shortDesc"     : "Learn how to model COBOL data by using Data Format Description Language (DFDL)",
+                                "shortDesc"     : "Learn how to model COBOL data by using Data Format Description Language (DFDL).",
                                 "detailsURL"    : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/details.html",
                                 "stepsURL"      : "http://ot4i.github.io/dfdl-cobol-tutorial/dfdlcobol/en/steps.html",
                                 "zipURL"        : "https://github.com/ot4i/dfdl-cobol-tutorial/releases/download/v1.0.0/dfdlcobol_PI_v1.zip",
@@ -382,7 +482,7 @@
                                 "name"          : "Modeling EDIFACT data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-                                "shortDesc"     : "Learn how to model EDIFACT data by using Data Format Description Language (DFDL)",
+                                "shortDesc"     : "Learn how to model EDIFACT data by using Data Format Description Language (DFDL).",
                                 "detailsURL"    : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/details.html",
                                 "stepsURL"      : "http://ot4i.github.io/dfdl-edifact-tutorial/dfdledifact/en/steps.html",
                                 "zipURL"        : "https://github.com/ot4i/dfdl-edifact-tutorial/releases/download/v1.0.0/dfdledifact_PI_v1.zip",
@@ -406,7 +506,7 @@
                                 "name"          : "Modeling HL7 data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-           	                "shortDesc"     : "Learn how to model HL7 healthcare data using Data Format Description Language (DFDL)",
+           	                "shortDesc"     : "Learn how to model HL7 healthcare data using Data Format Description Language (DFDL).",
            	                "detailsURL"    : "http://ot4i.github.io/dfdl-hl7-tutorial/dfdlhl7/en/details.html",
            	                "stepsURL"      : "http://ot4i.github.io/dfdl-hl7-tutorial/dfdlhl7/en/steps.html",
            	                "zipURL"        : "https://github.com/ot4i/dfdl-hl7-tutorial/releases/download/v1.0.0/dfdlhl7_PI_v1.zip",
@@ -430,7 +530,7 @@
        	                        "name"          : "Modeling Toshiba 4690 TLog data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-           	                "shortDesc"     : "Learn how to model Toshiba 4690 Point of Sale Transaction Log data by using Data Format Description Language (DFDL)",
+           	                "shortDesc"     : "Learn how to model Toshiba 4690 Point of Sale Transaction Log data by using Data Format Description Language (DFDL).",
            	                "detailsURL"    : "http://ot4i.github.io/dfdl-tlog-tutorial/dfdltlog/en/details.html",
            	                "stepsURL"      : "http://ot4i.github.io/dfdl-tlog-tutorial/dfdltlog/en/steps.html",
            	                "zipURL"        : "https://github.com/ot4i/dfdl-tlog-tutorial/releases/download/v1.0.0/dfdltlog_PI_v1.zip",
@@ -454,7 +554,7 @@
                                 "name"          : "Modeling ISO 8583 data by using DFDL",
                                 "version"	: "1.0",
                                 "iibVersions"	: "10.*-11.*",
-                                "shortDesc"     : "Learn how to model ISO 8583 data by using Data Format Description Language (DFDL)",
+                                "shortDesc"     : "Learn how to model ISO 8583 data by using Data Format Description Language (DFDL).",
                                 "detailsURL"    : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/details.html",
                                 "stepsURL"      : "http://ot4i.github.io/dfdl-iso8583-tutorial/dfdliso8583/en/steps.html",
                                 "zipURL"        : "https://github.com/ot4i/dfdl-iso8583-tutorial/releases/download/v1.0.0/dfdliso8583_PI_v1.zip",
@@ -473,106 +573,6 @@
                                                   ],
                                 "deployedResources": [
                                                      ]
-				},
-				{
-				"name" : "Integration using TCPIP nodes",
-				"version"	: "1.0",
-				"iibVersions"	: "10.*-11.*",
-				"shortDesc" : "Learn how to use TCP/IP nodes for integration with external applications using TCPIP sockets. ",
-				"detailsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/details.html",
-				"stepsURL" : "http://ot4i.github.io/tcpip-input-tutorial/en/steps.html",
-				"zipURL" : "https://github.com/ot4i/tcpip-input-tutorial/releases/download/1.0/TCPIP_Project_Interchange.zip",
-				"barFile" : "",
-				"visible"	: "true",
-				"tags"	: "tcp;tcpip",
-				"isPattern"	: "false",
-				"isFavorite"	: "true",
-				"projects"	: "TCPIPServer:TCPIPClient:DataLibrary",
-				"editorResPaths": [
-					{
-						"id" : "MainFlow",
-						"editor" : "",
-						"wspath" : "<workspace>/TCPIPServer/TCPIPProvider.msgflow"
-					}
-				],
-				"deployedResources": [
-				]
-				},
-				{
-					"name" : "Manage a set of records with IBM Integration Bus REST API services",
-					"version"	: "1.0",
-					"iibVersions"	: "10.*-11.*",
-					"shortDesc" : "Learn how to use an IBM Integration Bus REST API service to manage a set of records.",
-					"detailsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/details.html",
-					"stepsURL" : "http://ekharlamov.github.io/rest-api-tutorial/en/steps.html",
-					"zipURL" : "https://github.com/ot4i/rest-api-tutorial/releases/download/V1/CustomerDatabasePI_V1.zip",
-					"barFile" : "<workspace>/BARfiles/CustomerDatabaseV1.bar",
-					"visible"	: "true",
-					"tags"	: "rest api",
-					"isPattern"	: "false",
-					"isFavorite"	: "true",
-					"projects"	: "BARfiles:CustomerDatabaseJava:CustomerDatabaseV1",
-					"editorResPaths": [
-						{
-							"id" : "CustomerDatabaseV1",
-							"editor" : "",
-							"wspath" : "<workspace>/CustomerDatabaseV1/restapi.descriptor"
-						}
-					],
-			    	"deployedResources" : [
-						{
-							"type": "restapi",
-							"path": "CustomerDatabaseV1"
-						}
-					]
-				},
-				{
-		            	"name"          : "Using a Mapping node to access a Lookup table that is stored in the Global Cache",
-		            	"version"	: "1.0",
-		            	"iibVersions"	: "10.*-11.*",
-		            	"shortDesc"     : "Learn how to use a Mapping node to graphically access a Lookup table that is stored in the Global Cache by exploring this simple example.",
-				"detailsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/details.html",
-				"stepsURL" 	: "http://ot4i.github.io/mapping-cache-tutorial/en/steps.html",
-				"zipURL" 	: "https://github.com/ot4i/mapping-cache-tutorial/releases/download/1.0/MappingCachePI.zip",
-				"barFile" 	: "",
-		            	"visible"	: "true",
-		            	"tags"		: "transformation;map;cache",
-		            	"isPattern"	: "false",
-		            	"isFavorite"	: "true",
-		            	"projects"	: "LookupTable_UsingMappingGlobalCache",
-		            	"editorResPaths"   : [
-		            				{
-		            				"id" : "MainFlow",
-		            				"editor" : "flow",
-		            			  	"wspath" : "<workspace>/LookupTable_UsingMappingGlobalCache/LookupCountyFullName.msgflow"
-		            				}
-		            			],
-				"deployedResources" : [
-						]
-				},
-				{
-		        	"name"          : "Business transaction monitoring",
-		            	"version"	: "1.0",
-		            	"iibVersions"	: "10.*-11.*",
-		            	"shortDesc"     : "Learn how to monitor business transactions on IBM Integration Bus Version 10.0.0.3",
-		            	"detailsURL"    : "http://ot4i.github.io/btm-tutorial/en/details.html",
-		            	"stepsURL"      : "http://ot4i.github.io/btm-tutorial/en/steps.html",
-				"zipURL" 	: "https://github.com/ot4i/btm-tutorial/releases/download/V1/BTM_RETAIL.zip",
-					"barFile" : "",
-					"visible"	: "true",
-					"tags"	: "btm",
-					"isPattern"	: "false",
-					"isFavorite"	: "true",
-					"projects"	: "BTM_RETAIL_APP:BTM_RETAIL_SHARED_LIBRARY",
-					"editorResPaths": [
-						{
-							"id" : "MainProcessOrderFlow",
-							"editor" : "",
-							"wspath" : "<workspace>/BTM_RETAIL_APP/Main_Process_Order_Flow.msgflow"
-						}
-					],
-			    		"deployedResources" : [
-					]
 				}
 			]
 		}, 

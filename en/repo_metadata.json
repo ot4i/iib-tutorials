@@ -236,7 +236,39 @@
 							"path": "Transformation_DotNet"
 							}
 						]
-				},				
+				},
+				{
+		        		"name"          : "Producing and consuming Kafka messages",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the KafkaProducer and KafkaConsumer nodes in a message flow (requires IBM Integration Bus v10 fixpack 7 or later).",
+		            		"detailsURL"    : "http://ot4i.github.io/kafka-tutorial/en/details.html",
+		            		"stepsURL"      : "http://ot4i.github.io/kafka-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/kafka-tutorial/releases/download/V1.11/KafkaTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "kafka",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "KafkaProducerApplication:KafkaConsumerApplication",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/KafkaProducerApplication/KafkaProducerFlow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "KafkaProducerApplication"
+							},
+							{
+							"type": "application",
+							"path": "KafkaConsumerApplication"
+							}
+					]
+				},																				
 				{
 			       	        "name"          : "Retrieving records from a Salesforce system",
 			                "version"	: "1.0",

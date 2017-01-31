@@ -494,6 +494,42 @@
 							}
 						]
 				},
+				{
+		        		"name"          : "Aggregation nodes using MQ transport to back-end services",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages over MQ.",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-mq-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-mq-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-mq-tutorial/releases/download/v1.0/AggregationMQTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationMQ:AggregationMQBackend1:AggregationMQBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationMQ/AggregationMQ_FanOut.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationMQ"
+							},
+							{
+							"type": "application",
+							"path": "AggregationMQBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationMQBackend2"
+							}						
+					]
+				},
                         	{
                                 "name"          : "Modeling CSV data by using DFDL",
                                 "version"	: "1.0",

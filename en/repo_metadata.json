@@ -326,10 +326,10 @@
 					]
 				},
 				{
-		        		"name"          : "Aggregation nodes using CallableFlowAsyncInvoke nodes with back-end services (requires IBM Integration Bus v10 fixpack 8 or later).",
+		        		"name"          : "Aggregation nodes using CallableFlowAsyncInvoke nodes with back-end services",
 		            		"version"	: "1.0",
 		            		"iibVersions"	: "10.*-11.*",
-		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous Callable Flow nodes.",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous Callable Flow nodes (requires IBM Integration Bus v10 fixpack 8 or later).",
 		            		"detailsURL"    : "https://ot4i.github.io/aggregation-callableasync-tutorial/en/details.html",
 		            		"stepsURL"      : "https://ot4i.github.io/aggregation-callableasync-tutorial/en/steps.html",
 					"zipURL" 	: "https://github.com/ot4i/aggregation-callableasync-tutorial/releases/download/v1.0/AggregationCallableAsyncTutorial.zip",

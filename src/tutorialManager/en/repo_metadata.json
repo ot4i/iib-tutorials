@@ -14,6 +14,354 @@
 			"tutorials":
 			[
 				{
+		        		"name"          : "Producing and consuming Kafka messages",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the KafkaProducer and KafkaConsumer nodes in a message flow (requires IBM Integration Bus v10 fixpack 7 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/kafka-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/kafka-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/kafka-tutorial/releases/download/V1.11/KafkaTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "kafka",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "KafkaProducerApplication:KafkaConsumerApplication",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/KafkaProducerApplication/KafkaProducerFlow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "KafkaProducerApplication"
+							},
+							{
+							"type": "application",
+							"path": "KafkaConsumerApplication"
+							}
+					]
+				},
+				{
+		        		"name"          : "Call a REST API using the RESTRequest node",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use a RESTRequest node to call a REST API (requires IBM Integration Bus v10 fixpack 6 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/restrequest-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/restrequest-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/restrequest-tutorial/releases/download/v1.0/RESTRequestTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "rest",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "RESTRequest_Client:RESTRequest_API:RESTRequest_SharedLibrary",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/RESTRequest_Client/RESTRequest_Client.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "RESTRequest_Client"
+							},
+							{
+							"type": "application",
+							"path": "RESTRequest_API"
+							},
+							{
+							"type": "library",
+							"path": "RESTRequest_SharedLibrary"
+							}						
+					]
+				},				
+				{
+		        		"name"          : "Call a REST API using the RESTAsyncRequest node",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use a RESTAsyncRequest node to call a REST API and a RESTAsyncResponse node to receive the response (requires IBM Integration Bus v10 fixpack 6 or later).",					
+		            		"detailsURL"    : "https://ot4i.github.io/restrequest=async-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/restrequest-async-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/restrequest-async-tutorial/releases/download/v1.0/RESTAsyncRequestTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "rest",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "RESTAsyncRequest_Client:RESTAsyncRequest_API:RESTAsyncRequest_SharedLibrary",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/RESTAsyncRequest_Client/RESTAsyncRequest.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "RESTAsyncRequest_Client"
+							},
+							{
+							"type": "application",
+							"path": "RESTAsyncRequest_API"
+							},
+							{
+							"type": "library",
+							"path": "RESTAsyncRequest_SharedLibrary"
+							}						
+					]
+				},								
+				{
+		        		"name"          : "Using Bluemix Product Insights to view IBM Integration Bus Startup and Usage",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Product Insights service on Bluemix to get a centralized view of IBM Integration Bus Startup and Usage (requires IBM Integration Bus v10 fixpack 8 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/productinsights-service-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/productinsights-service-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/productinsights-service-tutorial/releases/download/v2.0/ProductInsightsTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "product-insights",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "PrimeNumbers",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/PrimeNumbers/PrimeNumbers.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "PrimeNumbers"
+							}
+					]
+				},
+				{
+		        		"name"          : "Using Bluemix Kibana Dashboards to view IIB Logs",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use a Kibana Dashboard on Bluemix to get a centralised view of IIB Logs (requires IBM Integration Bus v10 fixpack 8 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/productinsights-logging-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/productinsights-logging-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/productinsights-logging-tutorial/releases/download/v3.0/ProductInsightsKibanaTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "Bluemix",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "LogMessages",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/LogMessages/LogMessages.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "LogMessages"
+							}
+					]
+				},				
+				{
+		        		"name"          : "Aggregation nodes using MQ nodes with back-end services",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using MQ nodes.",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-mq-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-mq-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-mq-tutorial/releases/download/v1.0/AggregationMQTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationMQ:AggregationMQBackend1:AggregationMQBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationMQ/AggregationMQ_FanOut.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationMQ"
+							},
+							{
+							"type": "application",
+							"path": "AggregationMQBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationMQBackend2"
+							}						
+					]
+				},
+				{
+		        		"name"          : "Aggregation nodes using HTTPAsyncRequest nodes with back-end services",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous HTTP nodes.",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-httpasync-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-httpasync-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-httpasync-tutorial/releases/download/v1.0/AggregationHTTPAsyncTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationHTTPAsync:AggregationHTTPBackend1:AggregationHTTPBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationHTTPAsync/AggregationHTTPAsync.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationHTTPAsync"
+							},
+							{
+							"type": "application",
+							"path": "AggregationHTTPBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationHTTPBackend2"
+							},
+							{
+							"type": "library",
+							"path": "AggregationHTTPAsyncLib"
+							}
+					]
+				},
+				{
+		        		"name"          : "Aggregation nodes using RESTAsyncRequest nodes with back-end services",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous REST nodes (requires IBM Integration Bus v10 fixpack 6 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-restasync-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-restasync-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-restasync-tutorial/releases/download/v1.0/AggregationRestAsyncTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationRESTAsync:AggregationRESTBackend1:AggregationRESTBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationRESTAsync/getAggregatedResponse.subflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationRESTAsync"
+							},
+							{
+							"type": "application",
+							"path": "AggregationRESTBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationRESTBackend2"
+							}						
+					]
+				},
+				{
+		        		"name"          : "Aggregation nodes using SOAPAsyncRequest nodes with back-end services",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous SOAP nodes.",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-soapasync-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-soapasync-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-soapasync-tutorial/releases/download/v1.0/AggregationSOAPAsyncTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationSOAPAsync:AggregationSOAPBackend1:AggregationSOAPBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationSOAPAsync/gen/getAggregatedResponseOperation_Request_Respose.subflow"							
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationSOAPAsync"
+							},
+							{
+							"type": "application",
+							"path": "AggregationSOAPBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationSOAPBackend2"
+							},
+							{
+							"type": "library",
+							"path": "AggregationSOAPAsyncLib"
+							}						
+					]
+				},
+				{
+		        		"name"          : "Aggregation nodes using CallableFlowAsyncInvoke nodes with back-end services (requires IBM Integration Bus v10 fixpack 8 or later).",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous Callable Flow nodes.",
+		            		"detailsURL"    : "https://ot4i.github.io/aggregation-callableasync-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/aggregation-callableasync-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/aggregation-callableasync-tutorial/releases/download/v1.0/AggregationCallableAsyncTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "aggregation",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "AggregationCallableAsync:AggregationCallableAsyncBackend1:AggregationCallableAsyncBackend2",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/AggregationCallableAsync/getAggregatedResponse.subflow"							
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "AggregationCallableAsync"
+							},
+							{
+							"type": "application",
+							"path": "AggregationCallableAsyncBackend1"
+							},
+							{
+							"type": "application",
+							"path": "AggregationCallableAsyncBackend2"
+							}
+					]
+				},
+				{
 		        	"name"          : "Integration services (SOAP/HTTP inputs)",
 		            	"version"		: "1.0",
 		            	"iibVersions"	: "10.*-11.*",
@@ -237,38 +585,6 @@
 							}
 						]
 				},
-				{
-		        		"name"          : "Producing and consuming Kafka messages",
-		            		"version"	: "1.0",
-		            		"iibVersions"	: "10.*-11.*",
-		            		"shortDesc"     : "Learn how to use the KafkaProducer and KafkaConsumer nodes in a message flow (requires IBM Integration Bus v10 fixpack 7 or later).",
-		            		"detailsURL"    : "http://ot4i.github.io/kafka-tutorial/en/details.html",
-		            		"stepsURL"      : "http://ot4i.github.io/kafka-tutorial/en/steps.html",
-					"zipURL" 	: "https://github.com/ot4i/kafka-tutorial/releases/download/V1.11/KafkaTutorial.zip",
-					"barFile" 	: "",
-					"visible"	: "true",
-					"tags"		: "kafka",
-					"isPattern"	: "false",
-					"isFavorite"	: "true",
-					"projects"	: "KafkaProducerApplication:KafkaConsumerApplication",
-					"editorResPaths": [
-						{
-							"id" : "MainFlow",
-							"editor" : "",
-							"wspath" : "<workspace>/KafkaProducerApplication/KafkaProducerFlow.msgflow"
-						}
-					],
-			    		"deployedResources" : [
-							{
-							"type": "application",
-							"path": "KafkaProducerApplication"
-							},
-							{
-							"type": "application",
-							"path": "KafkaConsumerApplication"
-							}
-					]
-				},												
 				{
 			       	        "name"          : "Retrieving records from a Salesforce system",
 			                "version"	: "1.0",

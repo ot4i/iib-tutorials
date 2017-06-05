@@ -14,6 +14,126 @@
 			"tutorials":
 			[
 				{
+		        		"name"          : "Using a LoopBack Request node to insert data into a Cloudant database",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the LoopBackRequest node to create a JSON document in a Cloudant database (requires IBM Integration Bus v10 fixpack 6 or later).",
+		            		"detailsURL"    : "https://ot4i.github.io/loopback-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/loopback-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/loopback-tutorial/releases/download/v2.0/PI_LoopbackTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "loopback",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "LoopBack",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/LoopBack/LoopBack_Cloudant.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "LoopBack"
+							}						
+					]
+				},
+				{
+		        		"name"          : "Using a WorkLoad Management Policy to restrict the maximum throughput of a flow",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use a Workload Management Policy to restrict the maximum rate at which a message flow can run.",
+		            		"detailsURL"    : "https://ot4i.github.io/wlm-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/wlm-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/wlm-tutorial/releases/download/v1.0/PI_WLMTutorial.zip",
+					"barFile"	: "<workspace>/WorkloadManagementApplication/wlm.bar",
+					"visible"	: "true",
+					"tags"		: "policy",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "WorkloadManagementApplication",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/WorkloadManagementApplication/WorkloadManagementFlow.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "WorkloadManagementApplication"
+							}						
+					]
+				},				
+				{
+		        		"name"          : "Using a Sequence node to inject a sequence number into a message",
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Sequence node to inject sequence numbers into message data as it goes through a message flow.",
+		            		"detailsURL"    : "https://ot4i.github.io/sequence-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/sequence-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/sequence-tutorial/releases/download/v1.0/PI_SequenceTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "sequence",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "Sequence",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/Sequence/Sequence.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Sequence"
+							},
+							{
+							"type": "library",
+							"path": "CommaSeparatedValues"
+							}																					
+					]
+				},
+				{
+		        		"name"          : "Using a Resequence node to reorder messages going through a flow",					
+		            		"version"	: "1.0",
+		            		"iibVersions"	: "10.*-11.*",
+		            		"shortDesc"     : "Learn how to use the Resequence node to control the sequence in which a group of incoming messages are propagated through the message flow.",
+		            		"detailsURL"    : "https://ot4i.github.io/resequence-tutorial/en/details.html",
+		            		"stepsURL"      : "https://ot4i.github.io/resequence-tutorial/en/steps.html",
+					"zipURL" 	: "https://github.com/ot4i/resequence-tutorial/releases/download/v1.0/PI_ResequenceTutorial.zip",
+					"barFile" 	: "",
+					"visible"	: "true",
+					"tags"		: "sequence",
+					"isPattern"	: "false",
+					"isFavorite"	: "true",
+					"projects"	: "Sequence",
+					"editorResPaths": [
+						{
+							"id" : "MainFlow",
+							"editor" : "",
+							"wspath" : "<workspace>/Resequence/Resequence.msgflow"
+						}
+					],
+			    		"deployedResources" : [
+							{
+							"type": "application",
+							"path": "Resequence"
+							},
+							{
+							"type": "library",
+							"path": "CommaSeparatedValues"
+							}																					
+					]
+				},				
+				{
 		        		"name"          : "Producing and consuming Kafka messages",
 		            		"version"	: "1.0",
 		            		"iibVersions"	: "10.*-11.*",

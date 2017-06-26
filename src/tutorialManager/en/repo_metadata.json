@@ -82,7 +82,7 @@
 					"tags"		: "sequence",
 					"isPattern"	: "false",
 					"isFavorite"	: "true",
-					"projects"	: "Sequence",
+					"projects"	: "Sequence:CommaSeparatedValues",
 					"editorResPaths": [
 						{
 							"id" : "MainFlow",
@@ -114,7 +114,7 @@
 					"tags"		: "sequence",
 					"isPattern"	: "false",
 					"isFavorite"	: "true",
-					"projects"	: "Sequence",
+					"projects"	: "Resequence:CommaSeparatedValues",
 					"editorResPaths": [
 						{
 							"id" : "MainFlow",

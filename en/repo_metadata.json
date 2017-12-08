@@ -206,7 +206,7 @@
 		            		"version"	: "1.0",
 		            		"iibVersions"	: "10.*-11.*",
 		            		"shortDesc"     : "Learn how to use a RESTAsyncRequest node to call a REST API and a RESTAsyncResponse node to receive the response (requires IBM Integration Bus v10 fixpack 6 or later).",					
-		            		"detailsURL"    : "https://ot4i.github.io/restrequest=async-tutorial/en/details.html",
+		            		"detailsURL"    : "https://ot4i.github.io/restrequest-async-tutorial/en/details.html",
 		            		"stepsURL"      : "https://ot4i.github.io/restrequest-async-tutorial/en/steps.html",
 					"zipURL" 	: "https://github.com/ot4i/restrequest-async-tutorial/releases/download/v1.0/RESTAsyncRequestTutorial.zip",
 					"barFile" 	: "",
